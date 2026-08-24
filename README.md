@@ -1,6 +1,6 @@
 # 社區每日盯盤
 
-每天台灣時間 **17:00**，GitHub Action 會抓：
+每天台灣時間 **17:00**，Cursor Automation 會抓：
 
 - [遠雄北府苑](https://market.591.com.tw/102191/sale)
 - [西門大院](https://market.591.com.tw/3681545/sale)
@@ -28,11 +28,11 @@
 - 把價格寫進 `data/daily/YYYY-MM-DD.json` 與 `data/price-history.json`
 - 報告備份在 `reports/`，並回覆到 Issue「社區每日盯盤」
 
-## 你要開的設定
+## 每日寄信
 
-1. 打開 repo 的 **Actions**
-2. 在 GitHub → Settings → Secrets and variables → Actions，新增 `GMAIL_APP_PASSWORD`（Gmail 應用程式密碼）
-3. 合併 workflow 到 `master` 後，可按 **Run workflow** 先跑一次
+由 [Cursor Automation](https://cursor.com/automations) 在台灣時間 17:00 跑 `python3 watch/daily_report.py --send-email --commit`，寄到 `cequ3108@gmail.com`。
+
+GitHub Action「社區每日盯盤」只留手動 **Run workflow** 當備援，不再每天自動跑。
 
 ## 本地
 

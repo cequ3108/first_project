@@ -1,9 +1,8 @@
 name: 社區每日盯盤
 
 on:
-  schedule:
-    # 台灣時間每天 17:00 = UTC 09:00
-    - cron: "0 9 * * *"
+  # 每日 17:00 改由 Cursor Automation 寄信，避免兩封信。
+  # 仍保留手動觸發當備援。
   workflow_dispatch:
 
 permissions:
