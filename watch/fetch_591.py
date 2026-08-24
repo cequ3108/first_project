@@ -1,15 +1,14 @@
 """Fetch public 591 community sale listings.
 
-GitHub-hosted runners are blocked by 591/CloudFront (HTTP 403) even with
-Chrome TLS. On GitHub Actions, fetch via r.jina.ai. Elsewhere prefer
-curl_cffi, then curl, then urllib, then jina.
+Prefer curl_cffi Chrome TLS, then system curl HTTP/2, then urllib.
+r.jina.ai is a last-resort fallback; GitHub-hosted IPs are blocked by
+both 591/CloudFront and jina Cloudflare, so daily fetch runs on Cursor.
 """
 
 from __future__ import annotations
 
 import http.cookiejar
 import json
-import os
 import re
 import subprocess
 import tempfile
@@ -84,7 +83,7 @@ def fetch_sale_list(community_id: int, timeout: int = 30) -> list[dict]:
     if _active_session is not None:
         return _active_session.sale_list(int(community_id))
     errors: list[str] = []
-    factories = [_jina_session] if os.environ.get("GITHUB_ACTIONS") == "true" else [*_direct_factories(), _jina_session]
+    factories = [*_direct_factories(), _jina_session]
     for factory in factories:
         try:
             session = factory(timeout)
