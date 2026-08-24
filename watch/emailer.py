@@ -73,12 +73,24 @@ def _table_html(rows: list[str]) -> str:
     return "\n".join(body)
 
 
-def send_report(subject: str, markdown: str, default_to: str = "") -> str:
+def require_email_ready(default_to: str = "") -> dict[str, str]:
+    """Fail early with a phone-setup hint when Cursor secrets are missing."""
     cfg = mail_config(default_to)
     if not cfg["to"]:
-        raise RuntimeError("沒有收件信箱（MAIL_TO）")
+        raise RuntimeError(
+            "沒有收件信箱。請在 Cursor Secrets 設 MAIL_TO，或在 watch/communities.json 填 mail_to。"
+        )
     if not cfg["password"]:
-        raise RuntimeError("沒有 GMAIL_APP_PASSWORD，無法寄信")
+        raise RuntimeError(
+            "缺少 GMAIL_APP_PASSWORD。請用手機打開 "
+            "https://cursor.com/dashboard/cloud-agents → Secrets，"
+            "新增 GMAIL_APP_PASSWORD（Gmail 應用程式密碼）。不要把密碼寫進倉庫或 GitHub。"
+        )
+    return cfg
+
+
+def send_report(subject: str, markdown: str, default_to: str = "") -> str:
+    cfg = require_email_ready(default_to)
 
     html = markdown_to_html(markdown)
     message = MIMEMultipart("alternative")

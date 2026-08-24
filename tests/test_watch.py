@@ -212,6 +212,35 @@ class EmailTests(unittest.TestCase):
         self.assertIn("<th>", html)
         self.assertIn("100", html)
 
+    def test_require_email_ready_strips_password_spaces(self):
+        from unittest.mock import patch
+        from emailer import require_email_ready
+
+        env = {
+            "MAIL_TO": "to@example.com",
+            "MAIL_FROM": "from@example.com",
+            "GMAIL_APP_PASSWORD": "abcd efgh ijkl mnop",
+        }
+        with patch.dict("os.environ", env, clear=False):
+            cfg = require_email_ready()
+        self.assertEqual(cfg["to"], "to@example.com")
+        self.assertEqual(cfg["password"], "abcdefghijklmnop")
+
+    def test_require_email_ready_missing_password(self):
+        from unittest.mock import patch
+        from emailer import require_email_ready
+
+        env = {
+            "MAIL_TO": "to@example.com",
+            "MAIL_FROM": "from@example.com",
+            "GMAIL_APP_PASSWORD": "",
+            "SMTP_PASS": "",
+        }
+        with patch.dict("os.environ", env, clear=False):
+            with self.assertRaises(RuntimeError) as ctx:
+                require_email_ready()
+        self.assertIn("GMAIL_APP_PASSWORD", str(ctx.exception))
+
 
 class XimenTests(unittest.TestCase):
     def test_override_self_sale_two_bed(self):

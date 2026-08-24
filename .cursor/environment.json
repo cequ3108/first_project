@@ -1,0 +1,4 @@
+{
+  "name": "社區每日盯盤",
+  "install": "pip install -r requirements.txt"
+}
