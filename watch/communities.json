@@ -257,6 +257,46 @@
           "par_ping": 40.0
         }
       ]
+    },
+    {
+      "id": "wenhaiyan",
+      "name": "國泰文海硯",
+      "market_id": 39711,
+      "sale_url": "https://market.591.com.tw/39711/sale",
+      "overrides": [
+        {
+          "match": {"floor": 7, "area": 76.15, "area_tol": 0.2},
+          "cheap": 2780,
+          "fair": 3010,
+          "par": 3200,
+          "note": "三房含車，對114-08 16F同坪3116與115-05 2F 2376"
+        },
+        {
+          "match": {"floor": 5, "area": 83.87, "area_tol": 0.2},
+          "cheap": 2940,
+          "fair": 3150,
+          "par": 3360,
+          "note": "大坪數精品，對114-09 6F 95坪3272"
+        }
+      ],
+      "bands": [
+        {
+          "id": "large",
+          "min_area": 60,
+          "max_area": 90,
+          "cheap_ping": 36.5,
+          "fair_ping": 39.5,
+          "par_ping": 42.0
+        },
+        {
+          "id": "xl",
+          "min_area": 90,
+          "max_area": 120,
+          "cheap_ping": 35.0,
+          "fair_ping": 37.5,
+          "par_ping": 40.0
+        }
+      ]
     }
   ]
 }

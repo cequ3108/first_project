@@ -236,5 +236,26 @@ class XinyuanTests(unittest.TestCase):
         self.assertTrue(valued["in_par"])
 
 
+class WenhaiyanTests(unittest.TestCase):
+    def test_large_three_bed_below_ask(self):
+        community = load_config()["communities"][3]
+        self.assertEqual(community["id"], "wenhaiyan")
+        valued = apply_valuation(
+            {
+                "floor": 7,
+                "area": 76.15,
+                "ask": 3488,
+                "layout": "3房",
+                "house_id": "20723570",
+                "url": "https://example.com",
+            },
+            community,
+        )
+        self.assertEqual(valued["fair"], 3010)
+        self.assertEqual(valued["par"], 3200)
+        self.assertFalse(valued["in_fair"])
+        self.assertGreater(valued["over_fair"], 400)
+
+
 if __name__ == "__main__":
     unittest.main()
