@@ -111,6 +111,13 @@
       "name": "西門大院",
       "market_id": 3681545,
       "sale_url": "https://market.591.com.tw/3681545/sale",
+      "exclude": [
+        {
+          "house_ids": ["20325148", "24909466"],
+          "match": {"floor": 17, "area": 31.7, "area_tol": 0.3},
+          "reason": "已成交"
+        }
+      ],
       "overrides": [
         {
           "match": {"floor": 10, "area": 24.22, "area_tol": 0.2},

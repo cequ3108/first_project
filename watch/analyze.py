@@ -187,6 +187,23 @@ def merge_listings(listings: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return units
 
 
+def listing_excluded(listing: dict[str, Any], rules: list[dict[str, Any]]) -> bool:
+    """Drop sold or ignored units by house id or floor + area."""
+    house_id = str(listing.get("house_id") or "")
+    for rule in rules:
+        ids = {str(x) for x in (rule.get("house_ids") or [])}
+        if house_id and house_id in ids:
+            return True
+        match = rule.get("match") or {}
+        if match.get("floor") is None or listing.get("floor") != match.get("floor"):
+            continue
+        if "area" not in match:
+            continue
+        if abs(float(listing["area"]) - float(match["area"])) <= float(match.get("area_tol") or 0.25):
+            return True
+    return False
+
+
 def match_override(unit: dict[str, Any], overrides: list[dict[str, Any]]) -> dict[str, Any] | None:
     for rule in overrides:
         match = rule.get("match") or {}
@@ -282,10 +299,11 @@ def analyze_community(
     community: dict[str, Any],
     previous: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
+    exclude_rules = community.get("exclude") or []
     listings = []
     for raw in raw_items:
         item = listing_from_raw(raw)
-        if item:
+        if item and not listing_excluded(item, exclude_rules):
             listings.append(item)
     units = [apply_valuation(unit, community) for unit in merge_listings(listings)]
     units = attach_history(units, previous)

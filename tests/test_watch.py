@@ -213,6 +213,49 @@ class XimenTests(unittest.TestCase):
         self.assertEqual(valued["fair"], 1220)
         self.assertTrue(valued["in_fair"])
 
+    def test_sold_unit_excluded(self):
+        community = load_config()["communities"][1]
+        items = [
+            {
+                "houseid": "20325148",
+                "price_v": {"price": "1,220"},
+                "area_v": {"area": "31.70"},
+                "floor_en": "17F/24F",
+                "room": "2房2廳",
+                "title": "西門大院兩房",
+            },
+            {
+                "houseid": "24909466",
+                "price_v": {"price": "1,220"},
+                "area_v": {"area": "31.70"},
+                "floor_en": "17F/24F",
+                "room": "2房2廳",
+                "title": "西門大院兩房重複刊登",
+            },
+            {
+                "houseid": "99900001",
+                "price_v": {"price": "1,220"},
+                "area_v": {"area": "31.68"},
+                "floor_en": "17F/24F",
+                "room": "2房2廳",
+                "title": "同戶新刊登也要剔除",
+            },
+            {
+                "houseid": "20325199",
+                "price_v": {"price": "1,388"},
+                "area_v": {"area": "33.87"},
+                "floor_en": "12F/24F",
+                "room": "2房2廳",
+                "title": "西門大院另一戶",
+            },
+        ]
+        result = analyze_community(items, community)
+        uids = [unit["uid"] for unit in result["units"]]
+        self.assertNotIn("17F-31.70-2房", uids)
+        self.assertEqual(result["ad_count"], 1)
+        self.assertEqual(result["unit_count"], 1)
+        self.assertEqual(result["units"][0]["house_id"], "20325199")
+
 
 class XinyuanTests(unittest.TestCase):
     def test_small_two_bed_near_comp(self):
