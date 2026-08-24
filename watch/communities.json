@@ -297,6 +297,32 @@
           "par_ping": 40.0
         }
       ]
+    },
+    {
+      "id": "panyun",
+      "name": "國泰磐耘",
+      "market_id": 5892392,
+      "sale_url": "https://market.591.com.tw/5892392/sale",
+      "empty_note": "東區預售、591 標已完銷，交屋約 2026 下半年。目前沒有中古屋；出現換約會自動進表。預售牌價約 47–53 萬／坪、總價約 3700–4200 萬（車位另約 170–200 萬）。格局為三房 56–60 坪、3+1 房約 71 坪。",
+      "overrides": [],
+      "bands": [
+        {
+          "id": "three_br",
+          "min_area": 50,
+          "max_area": 66,
+          "cheap_ping": 42.0,
+          "fair_ping": 45.0,
+          "par_ping": 48.0
+        },
+        {
+          "id": "three_plus",
+          "min_area": 66,
+          "max_area": 80,
+          "cheap_ping": 42.0,
+          "fair_ping": 45.0,
+          "par_ping": 48.0
+        }
+      ]
     }
   ]
 }

@@ -257,5 +257,29 @@ class WenhaiyanTests(unittest.TestCase):
         self.assertGreater(valued["over_fair"], 400)
 
 
+class PanyunTests(unittest.TestCase):
+    def test_presale_band_and_empty_table(self):
+        community = load_config()["communities"][4]
+        self.assertEqual(community["id"], "panyun")
+        valued = apply_valuation(
+            {
+                "floor": 10,
+                "area": 60.0,
+                "ask": 3800,
+                "layout": "3房",
+                "house_id": "x",
+                "url": "https://example.com",
+            },
+            community,
+        )
+        self.assertEqual(valued["cheap"], 2520)
+        self.assertEqual(valued["fair"], 2700)
+        self.assertEqual(valued["par"], 2880)
+        analyzed = analyze_community([], community)
+        markdown = render_report({"communities": [analyzed]}, "2026-08-24 17:00")
+        self.assertIn("目前沒有中古屋", markdown)
+        self.assertIn("已完銷", markdown)
+
+
 if __name__ == "__main__":
     unittest.main()

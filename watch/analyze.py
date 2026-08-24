@@ -296,4 +296,5 @@ def analyze_community(
         "ad_count": len(listings),
         "unit_count": len(units),
         "units": units,
+        "empty_note": community.get("empty_note"),
     }

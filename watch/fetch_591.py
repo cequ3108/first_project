@@ -72,8 +72,8 @@ def _fetch_api(opener: urllib.request.OpenerDirector, community_id: int, timeout
     if not payload.get("status"):
         raise RuntimeError(f"591 回傳失敗: {payload.get('msg') or payload}")
     items = (payload.get("data") or {}).get("items") or []
-    if not isinstance(items, list) or not items:
-        raise RuntimeError("591 回傳格式異常或沒有物件")
+    if not isinstance(items, list):
+        raise RuntimeError("591 回傳格式異常：items 不是列表")
     return items
 
 

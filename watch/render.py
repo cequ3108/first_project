@@ -120,6 +120,10 @@ def table_section(community: dict[str, Any], heading: str) -> str:
     ]
     if sale_url:
         lines.append(f"來源：[{sale_url}]({sale_url})")
+    if not units:
+        note = community.get("empty_note") or "目前沒有 591 中古屋在售，之後出現會自動進表。"
+        lines.extend(["", note, ""])
+        return "\n".join(lines)
     lines.extend(
         [
             "",
@@ -154,6 +158,7 @@ def footnote() -> str:
             "- 西門大院多為新成屋／換約，合理價先用現況開價帶往下修，之後有更新實價再調。",
             "- 遠雄新源邸約 6 年，合理價對過 115 年同社區實價（小兩房約 36–41 萬／坪、49 坪三房約 37.8 萬／坪）。",
             "- 國泰文海硯約 9 年、大坪數為主。近一年同社區大戶實價約 33–43 萬／坪，開價若到 45 萬／坪以上通常偏貴。",
+            "- 國泰磐耘是東區預售、591 標已完銷，交屋約 2026 下半年。牌價約 47–53 萬／坪；換約／新成屋先用 42／45／48 萬／坪當便宜／合理／平價。",
             "",
         ]
     )
@@ -177,5 +182,5 @@ def render_report(result: dict[str, Any], generated_at: str) -> str:
 
 
 def _cjk_index(number: int) -> str:
-    mapping = {1: "一", 2: "二", 3: "三", 4: "四", 5: "五", 6: "六"}
+    mapping = {1: "一", 2: "二", 3: "三", 4: "四", 5: "五", 6: "六", 7: "七"}
     return mapping.get(number, str(number))
