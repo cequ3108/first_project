@@ -601,6 +601,68 @@
           "par_ping": 45.0
         }
       ]
+    },
+    {
+      "id": "fuli-hezhu",
+      "name": "富立和築",
+      "market_id": 39225,
+      "sale_url": "https://market.591.com.tw/39225/sale",
+      "overrides": [
+        {
+          "match": {"floor": 6, "area": 55.62, "area_tol": 0.3},
+          "cheap": 1980,
+          "fair": 2140,
+          "par": 2260,
+          "note": "中低樓三房平車，對115-01 7F 46坪1990與114-12 8F 51坪2200"
+        },
+        {
+          "match": {"floor": 7, "area": 40.88, "area_tol": 0.2},
+          "cheap": 1540,
+          "fair": 1680,
+          "par": 1780,
+          "note": "兩房含車，對113-10 10F 51坪1950"
+        },
+        {
+          "match": {"floor": 10, "area": 56.54, "area_tol": 0.2},
+          "cheap": 2240,
+          "fair": 2410,
+          "par": 2550,
+          "note": "中高樓三房平車"
+        },
+        {
+          "match": {"floor": 15, "area": 55.8, "area_tol": 1.6},
+          "cheap": 2320,
+          "fair": 2520,
+          "par": 2650,
+          "note": "頂樓朝南三房平車，對中樓實價往上加"
+        }
+      ],
+      "bands": [
+        {
+          "id": "small_2br",
+          "min_area": 28,
+          "max_area": 44,
+          "cheap_ping": 37.5,
+          "fair_ping": 41.0,
+          "par_ping": 43.5
+        },
+        {
+          "id": "mid_3br",
+          "min_area": 44,
+          "max_area": 62,
+          "cheap_ping": 37.0,
+          "fair_ping": 39.8,
+          "par_ping": 42.5
+        },
+        {
+          "id": "large",
+          "min_area": 62,
+          "max_area": 95,
+          "cheap_ping": 35.0,
+          "fair_ping": 38.0,
+          "par_ping": 40.5
+        }
+      ]
     }
   ]
 }

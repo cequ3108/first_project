@@ -377,5 +377,24 @@ class FuliZhenbangTests(unittest.TestCase):
         self.assertTrue(valued["in_fair"])
 
 
+class FuliHezhuTests(unittest.TestCase):
+    def test_six_floor_three_bed_in_fair(self):
+        community = load_config()["communities"][10]
+        self.assertEqual(community["id"], "fuli-hezhu")
+        valued = apply_valuation(
+            {
+                "floor": 6,
+                "area": 55.65,
+                "ask": 2100,
+                "layout": "3房",
+                "house_id": "20605562",
+                "url": "https://example.com",
+            },
+            community,
+        )
+        self.assertEqual(valued["fair"], 2140)
+        self.assertTrue(valued["in_fair"])
+
+
 if __name__ == "__main__":
     unittest.main()
