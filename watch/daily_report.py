@@ -20,7 +20,7 @@ if str(Path(__file__).resolve().parent) not in sys.path:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from analyze import analyze_community  # noqa: E402
-from emailer import send_report  # noqa: E402
+from emailer import require_email_ready, send_report  # noqa: E402
 from fetch_591 import fetch_sale_list  # noqa: E402
 from history import daily_snapshot, load_history, previous_units, upsert_history  # noqa: E402
 from render import render_report  # noqa: E402
@@ -190,6 +190,17 @@ def write_step_summary(report_md: str) -> None:
     Path(path).write_text(report_md, encoding="utf-8")
 
 
+def current_branch() -> str:
+    result = subprocess.run(
+        ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    return (result.stdout or "").strip()
+
+
 def commit_outputs(paths: list[Path], message: str) -> bool:
     if os.environ.get("SKIP_GIT_COMMIT") == "1":
         return False
@@ -214,6 +225,20 @@ def commit_outputs(paths: list[Path], message: str) -> bool:
     return True
 
 
+def push_current_branch() -> str:
+    branch = current_branch()
+    if not branch or branch == "HEAD":
+        raise RuntimeError("目前不在具名分支上，無法把開價紀錄推回去")
+    if branch != "master":
+        print(
+            f"警告：開價紀錄會推到 `{branch}`，不是 `master`。"
+            "手機設 Automation 時請選 repository + branch=`master`，否則隔天會讀不到昨天的資料。",
+            file=sys.stderr,
+        )
+    subprocess.run(["git", "push", "-u", "origin", branch], check=True, cwd=ROOT)
+    return branch
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="社區每日盯盤")
     parser.add_argument("--config", type=Path, default=ROOT / "watch" / "communities.json")
@@ -226,12 +251,19 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--publish-issue", action="store_true")
     parser.add_argument("--send-email", action="store_true")
     parser.add_argument("--commit", action="store_true")
+    parser.add_argument("--push", action="store_true", help="把開價紀錄推回目前分支，隔天 Cursor 才讀得到")
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
     config = load_json(args.config, {})
+    if args.send_email:
+        try:
+            require_email_ready(config.get("mail_to") or "")
+        except RuntimeError as exc:
+            print(str(exc), file=sys.stderr)
+            return 1
     snapshot = load_json(args.snapshot, None)
     history = load_history(args.history)
     fixture_items = None
@@ -281,6 +313,9 @@ def main() -> int:
         day = result["generated_at"][:10]
         if commit_outputs(written, f"chore: 更新 {day} 社區盯盤與開價紀錄"):
             print("已提交 snapshot、價格歷史與報告", file=sys.stderr)
+    if args.push:
+        branch = push_current_branch()
+        print(f"已推送開價紀錄到 origin/{branch}", file=sys.stderr)
     return 0
 
 
