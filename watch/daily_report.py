@@ -168,7 +168,7 @@ def find_or_create_issue(token: str) -> int:
             "title": ISSUE_TITLE,
             "labels": [ISSUE_LABEL],
             "body": (
-                "這則 Issue 收遠雄北府苑、西門大院、遠雄新源邸、國泰文海硯、國泰文林硯、國泰磐耘、允將海安、藏美表參道的每日盯盤備份。\n\n"
+                "這則 Issue 收遠雄北府苑、西門大院、遠雄新源邸、國泰文海硯、國泰文林硯、國泰磐耘、允將海安、藏美表參道、遠雄頂美的每日盯盤備份。\n\n"
                 "正式報告會寄到信箱；這裡方便在 GitHub 上回看。"
             ),
         },

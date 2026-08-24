@@ -339,5 +339,24 @@ class ZangmeiTests(unittest.TestCase):
         self.assertTrue(valued["in_fair"])
 
 
+class DingmeiTests(unittest.TestCase):
+    def test_fifteen_floor_near_comp(self):
+        community = load_config()["communities"][8]
+        self.assertEqual(community["id"], "dingmei")
+        valued = apply_valuation(
+            {
+                "floor": 15,
+                "area": 47.2,
+                "ask": 1738,
+                "layout": "3房",
+                "house_id": "20485939",
+                "url": "https://example.com",
+            },
+            community,
+        )
+        self.assertEqual(valued["fair"], 1740)
+        self.assertTrue(valued["in_fair"])
+
+
 if __name__ == "__main__":
     unittest.main()

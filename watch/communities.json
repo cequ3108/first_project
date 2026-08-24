@@ -492,6 +492,67 @@
           "par_ping": 44.5
         }
       ]
+    },
+    {
+      "id": "dingmei",
+      "name": "遠雄頂美",
+      "market_id": 101914,
+      "sale_url": "https://market.591.com.tw/101914/sale",
+      "overrides": [
+        {
+          "match": {"floor": 12, "area": 34.66, "area_tol": 0.2},
+          "cheap": 1260,
+          "fair": 1340,
+          "par": 1400,
+          "note": "兩房含車，對115-01 18F 45坪1475"
+        },
+        {
+          "match": {"floor": 15, "area": 47.2, "area_tol": 0.2},
+          "cheap": 1640,
+          "fair": 1740,
+          "par": 1810,
+          "note": "三房含車，對115-05 10F 54坪1815"
+        },
+        {
+          "match": {"floor": 7, "area": 47.1, "area_tol": 0.2},
+          "cheap": 1620,
+          "fair": 1720,
+          "par": 1780,
+          "note": "三房中低樓"
+        },
+        {
+          "match": {"floor": 18, "area": 47.2, "area_tol": 0.2},
+          "cheap": 1720,
+          "fair": 1820,
+          "par": 1900,
+          "note": "高樓三房海景"
+        },
+        {
+          "match": {"floor": 22, "area": 47.2, "area_tol": 0.2},
+          "cheap": 1780,
+          "fair": 1900,
+          "par": 2020,
+          "note": "頂樓兩房"
+        }
+      ],
+      "bands": [
+        {
+          "id": "small_2br",
+          "min_area": 28,
+          "max_area": 40,
+          "cheap_ping": 36.2,
+          "fair_ping": 38.5,
+          "par_ping": 40.3
+        },
+        {
+          "id": "mid_3br",
+          "min_area": 40,
+          "max_area": 56,
+          "cheap_ping": 34.8,
+          "fair_ping": 36.6,
+          "par_ping": 38.2
+        }
+      ]
     }
   ]
 }
