@@ -15,7 +15,7 @@ from analyze import (  # noqa: E402
     sane_original,
 )
 from emailer import markdown_to_html  # noqa: E402
-from fetch_591 import parse_sale_list_payload  # noqa: E402
+from fetch_591 import parse_jina_body, parse_sale_list_payload  # noqa: E402
 from history import match_previous, upsert_history  # noqa: E402
 from render import render_report  # noqa: E402
 
@@ -35,6 +35,14 @@ class FetchParseTests(unittest.TestCase):
     def test_rejects_failed_status(self):
         with self.assertRaises(RuntimeError):
             parse_sale_list_payload({"status": 0, "msg": "forbidden"})
+
+    def test_jina_markdown_wrapper(self):
+        wrapped = (
+            "Title: 591\n\nURL Source: https://example.com\n\n"
+            'Markdown Content:\n{"status":1,"data":{"items":[{"houseid":"1"}]}}\n'
+        )
+        payload = parse_jina_body(wrapped)
+        self.assertEqual(parse_sale_list_payload(payload)[0]["houseid"], "1")
 
 
 class ParseTests(unittest.TestCase):

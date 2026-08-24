@@ -41,7 +41,7 @@ Gmail 應用程式密碼在這裡產生：https://myaccount.google.com/apppasswo
 
 設好後可到 https://github.com/cequ3108/first_project/actions/workflows/daily-watch.yml 按 **Run workflow** 先試一次。之後每天 17:00 會自動跑。
 
-GitHub 的雲端 IP 有時會被 591 擋；Action 會用 Chrome 指紋抓資料。若仍失敗，日誌會寫 `591 抓取失敗`。
+GitHub 的雲端 IP 會被 591 直接擋下（Chrome 指紋也一樣）。Action 改經 `r.jina.ai` 代抓公開在售資料。
 
 ## 本地
 

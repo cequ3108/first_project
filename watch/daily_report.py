@@ -72,8 +72,9 @@ def run_watch(
             items = fixture_items
         else:
             if index > 0:
-                time.sleep(1)
-            items = fetch_sale_list(community["market_id"])
+                time.sleep(2 if os.environ.get("GITHUB_ACTIONS") == "true" else 1)
+            timeout = 45 if os.environ.get("GITHUB_ACTIONS") == "true" else 30
+            items = fetch_sale_list(community["market_id"], timeout=timeout)
         analyzed = analyze_community(items, community, previous_for(community["id"], snapshot, history))
         communities.append(analyzed)
     return {"generated_at": generated_at, "communities": communities}
