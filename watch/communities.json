@@ -553,6 +553,54 @@
           "par_ping": 38.2
         }
       ]
+    },
+    {
+      "id": "fuli-zhenbang",
+      "name": "富立真邦",
+      "market_id": 39226,
+      "sale_url": "https://market.591.com.tw/39226/sale",
+      "overrides": [
+        {
+          "match": {"floor": 3, "area": 68.21, "area_tol": 0.35},
+          "cheap": 2880,
+          "fair": 3060,
+          "par": 3180,
+          "note": "低樓三房平車，對115-05 7F 68坪2750與115-06 7F 67坪3400"
+        },
+        {
+          "match": {"floor": 13, "area": 67.94, "area_tol": 0.25},
+          "cheap": 3120,
+          "fair": 3300,
+          "par": 3440,
+          "note": "高樓三房大車位，對114-08 12F 67坪3600"
+        }
+      ],
+      "bands": [
+        {
+          "id": "mid_3br",
+          "min_area": 40,
+          "max_area": 62,
+          "cheap_ping": 47.5,
+          "fair_ping": 51.0,
+          "par_ping": 53.5
+        },
+        {
+          "id": "large",
+          "min_area": 62,
+          "max_area": 80,
+          "cheap_ping": 44.0,
+          "fair_ping": 47.0,
+          "par_ping": 50.0
+        },
+        {
+          "id": "xl",
+          "min_area": 80,
+          "max_area": 140,
+          "cheap_ping": 38.0,
+          "fair_ping": 42.0,
+          "par_ping": 45.0
+        }
+      ]
     }
   ]
 }

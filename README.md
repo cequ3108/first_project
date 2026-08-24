@@ -11,6 +11,7 @@
 - [允將海安](https://market.591.com.tw/3694974/sale)
 - [藏美表參道](https://market.591.com.tw/5885447/sale)
 - [遠雄頂美](https://market.591.com.tw/101914/sale)
+- [富立真邦](https://market.591.com.tw/39226/sale)
 
 合併同一戶的重複刊登，算出開價、便宜價、合理價、平價，並把當天開價寫進 GitHub，隔天才能對出「有沒有降價」。
 
