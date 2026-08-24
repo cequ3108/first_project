@@ -281,5 +281,24 @@ class PanyunTests(unittest.TestCase):
         self.assertIn("已完銷", markdown)
 
 
+class YunjiangTests(unittest.TestCase):
+    def test_low_floor_at_fair(self):
+        community = load_config()["communities"][5]
+        self.assertEqual(community["id"], "yunjiang-haian")
+        valued = apply_valuation(
+            {
+                "floor": 3,
+                "area": 54.0,
+                "ask": 1780,
+                "layout": "3房",
+                "house_id": "20468817",
+                "url": "https://example.com",
+            },
+            community,
+        )
+        self.assertEqual(valued["fair"], 1780)
+        self.assertTrue(valued["in_fair"])
+
+
 if __name__ == "__main__":
     unittest.main()

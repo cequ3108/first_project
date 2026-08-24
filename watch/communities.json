@@ -323,6 +323,67 @@
           "par_ping": 48.0
         }
       ]
+    },
+    {
+      "id": "yunjiang-haian",
+      "name": "允將海安",
+      "market_id": 3694974,
+      "sale_url": "https://market.591.com.tw/3694974/sale",
+      "overrides": [
+        {
+          "match": {"floor": 4, "area": 48.85, "area_tol": 0.3},
+          "cheap": 1580,
+          "fair": 1660,
+          "par": 1720,
+          "note": "2+1可隔三房，全新未住"
+        },
+        {
+          "match": {"floor": 3, "area": 54.0, "area_tol": 0.25},
+          "cheap": 1680,
+          "fair": 1780,
+          "par": 1840,
+          "note": "3+1低樓，現況開價貼近111年同坪預售成交"
+        },
+        {
+          "match": {"floor": 22, "area": 53.08, "area_tol": 0.25},
+          "cheap": 1920,
+          "fair": 2040,
+          "par": 2140,
+          "note": "高樓三房景觀"
+        },
+        {
+          "match": {"floor": 7, "area": 55.62, "area_tol": 0.25},
+          "cheap": 1980,
+          "fair": 2120,
+          "par": 2240,
+          "note": "中樓四房"
+        },
+        {
+          "match": {"floor": 23, "area": 52.64, "area_tol": 0.25},
+          "cheap": 1980,
+          "fair": 2100,
+          "par": 2220,
+          "note": "次頂樓三房"
+        }
+      ],
+      "bands": [
+        {
+          "id": "mid",
+          "min_area": 45,
+          "max_area": 52,
+          "cheap_ping": 32.3,
+          "fair_ping": 34.0,
+          "par_ping": 35.2
+        },
+        {
+          "id": "large",
+          "min_area": 52,
+          "max_area": 60,
+          "cheap_ping": 33.5,
+          "fair_ping": 36.0,
+          "par_ping": 38.0
+        }
+      ]
     }
   ]
 }

@@ -96,7 +96,8 @@
         "20112445",
         "20716760",
         "20750272",
-        "20766451"
+        "20766451",
+        "24927548"
       ],
       "history": [
         {
@@ -255,7 +256,8 @@
       "floor_label": "12F/24F",
       "area": 33.87,
       "house_ids": [
-        "20246176"
+        "20246176",
+        "24909540"
       ],
       "history": [
         {
@@ -423,7 +425,8 @@
         "20665120",
         "20669188",
         "24804200",
-        "24803893"
+        "24803893",
+        "24803465"
       ],
       "history": [
         {
@@ -503,7 +506,8 @@
         "20618570",
         "20629722",
         "20697335",
-        "20723570"
+        "20723570",
+        "24869098"
       ],
       "history": [
         {
@@ -545,13 +549,13 @@
         }
       ]
     },
-    "beifu-yuan|4F-42.48-3房": {
+    "beifu-yuan|4F-42.49-3房": {
       "community_id": "beifu-yuan",
       "name": "遠雄北府苑",
-      "uid": "4F-42.48-3房",
+      "uid": "4F-42.49-3房",
       "layout": "3房",
       "floor_label": "4F/15F",
-      "area": 42.48,
+      "area": 42.49,
       "house_ids": [
         "20447175",
         "20479121",
@@ -585,7 +589,127 @@
           "drop_note": "591已降100萬（2168→2068）"
         }
       ]
+    },
+    "yunjiang-haian|4F-48.85-2+1房": {
+      "community_id": "yunjiang-haian",
+      "name": "允將海安",
+      "uid": "4F-48.85-2+1房",
+      "layout": "2+1房",
+      "floor_label": "4F/24F",
+      "area": 48.85,
+      "house_ids": [
+        "19892366",
+        "20539346",
+        "20588537",
+        "20636726",
+        "20698882",
+        "20763472",
+        "20777951",
+        "24933868"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 1698,
+          "cheap": 1580,
+          "fair": 1660,
+          "par": 1720,
+          "over_fair": 38,
+          "drop_note": "未見"
+        }
+      ]
+    },
+    "yunjiang-haian|3F-54.00-3房": {
+      "community_id": "yunjiang-haian",
+      "name": "允將海安",
+      "uid": "3F-54.00-3房",
+      "layout": "3房",
+      "floor_label": "3F/24F",
+      "area": 54.0,
+      "house_ids": [
+        "20468817"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 1780,
+          "cheap": 1680,
+          "fair": 1780,
+          "par": 1840,
+          "over_fair": 0,
+          "drop_note": "未見"
+        }
+      ]
+    },
+    "yunjiang-haian|22F-53.08-3房": {
+      "community_id": "yunjiang-haian",
+      "name": "允將海安",
+      "uid": "22F-53.08-3房",
+      "layout": "3房",
+      "floor_label": "22F/24F",
+      "area": 53.08,
+      "house_ids": [
+        "20496524",
+        "20628588",
+        "20763660",
+        "20444276"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 2158,
+          "cheap": 1920,
+          "fair": 2040,
+          "par": 2140,
+          "over_fair": 118,
+          "drop_note": "未見"
+        }
+      ]
+    },
+    "yunjiang-haian|7F-55.62-4房": {
+      "community_id": "yunjiang-haian",
+      "name": "允將海安",
+      "uid": "7F-55.62-4房",
+      "layout": "4房",
+      "floor_label": "7F/24F",
+      "area": 55.62,
+      "house_ids": [
+        "20717536"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 2388,
+          "cheap": 1980,
+          "fair": 2120,
+          "par": 2240,
+          "over_fair": 268,
+          "drop_note": "未見"
+        }
+      ]
+    },
+    "yunjiang-haian|23F-52.64-3房": {
+      "community_id": "yunjiang-haian",
+      "name": "允將海安",
+      "uid": "23F-52.64-3房",
+      "layout": "3房",
+      "floor_label": "23F/24F",
+      "area": 52.64,
+      "house_ids": [
+        "20531715"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 2518,
+          "cheap": 1980,
+          "fair": 2100,
+          "par": 2220,
+          "over_fair": 418,
+          "drop_note": "未見"
+        }
+      ]
     }
   },
-  "updated_at": "2026-08-24 11:29"
+  "updated_at": "2026-08-24 11:31"
 }

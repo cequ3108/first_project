@@ -7,6 +7,7 @@
 - [遠雄新源邸](https://market.591.com.tw/39785/sale)
 - [國泰文海硯](https://market.591.com.tw/39711/sale)
 - [國泰磐耘](https://market.591.com.tw/5892392/sale)
+- [允將海安](https://market.591.com.tw/3694974/sale)
 
 合併同一戶的重複刊登，算出開價、便宜價、合理價、平價，並把當天開價寫進 GitHub，隔天才能對出「有沒有降價」。
 
