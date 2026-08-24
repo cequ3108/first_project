@@ -1,9 +1,9 @@
 name: 社區每日盯盤
 
+# GitHub 託管 runner 的 IP 會被 591/CloudFront 擋（HTTP 403），
+# 連 r.jina.ai 也會被 Cloudflare 挑戰頁擋。每日 17:00 改由 Cursor 直連寄信。
+# 若之後改用自家 IP 的 self-hosted runner，可再打開下面的 schedule。
 on:
-  schedule:
-    # 台灣時間每天 17:00 = UTC 09:00
-    - cron: "0 9 * * *"
   workflow_dispatch:
 
 permissions:

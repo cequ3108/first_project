@@ -1,6 +1,6 @@
 # 社區每日盯盤
 
-每天台灣時間 **17:00**，GitHub Action 會抓：
+每天台灣時間 **17:00**，Cursor 會直連 591 抓：
 
 - [遠雄北府苑](https://market.591.com.tw/102191/sale)
 - [西門大院](https://market.591.com.tw/3681545/sale)
@@ -26,22 +26,18 @@
 
 - 寄信到 `cequ3108@gmail.com`
 - 把價格寫進 `data/daily/YYYY-MM-DD.json` 與 `data/price-history.json`
-- 報告備份在 `reports/`，並回覆到 Issue「社區每日盯盤」
+- 報告備份在 `reports/`
 
-## 你要開的設定（Gmail Secret）
+## 為什麼不用 GitHub Action 排程
 
-1. 打開這個頁面：https://github.com/cequ3108/first_project/settings/secrets/actions
-2. 按 **New repository secret**
-3. Name 填：`GMAIL_APP_PASSWORD`
-4. Secret 填 Gmail「應用程式密碼」（16 碼，不是登入密碼）
-5. 按 **Add secret**
+GitHub 託管 runner 的雲端 IP 會被 591/CloudFront 直接擋下（HTTP 403），連 Chrome TLS 與 `r.jina.ai` 代抓也會被 Cloudflare 挑戰頁擋。Gmail Secret 沒問題，問題在抓資料。
 
-Gmail 應用程式密碼在這裡產生：https://myaccount.google.com/apppasswords  
-（帳號要先開兩步驟驗證，選「郵件」即可。）
+因此：
 
-設好後可到 https://github.com/cequ3108/first_project/actions/workflows/daily-watch.yml 按 **Run workflow** 先試一次。之後每天 17:00 會自動跑。
+- **每日 17:00 寄信：Cursor**（這個環境可以直連 591）
+- GitHub Action 只保留手動 `workflow_dispatch`，方便之後若改用**自家 IP 的 self-hosted runner** 再打開排程
 
-GitHub 的雲端 IP 會被 591 直接擋下（Chrome 指紋也一樣）。Action 改經 `r.jina.ai` 代抓公開在售資料。
+較耐久的做法：到 https://cursor.com/automations/new 建一則 Automation（repo `cequ3108/first_project`，branch `master`，cron 若用 UTC 填 `0 9 * * *`）。對話裡的 timer 大約一週會過期。
 
 ## 本地
 
@@ -50,4 +46,4 @@ python3 -m unittest discover -s tests -v
 python3 watch/daily_report.py --send-email
 ```
 
-估價帶在 `watch/communities.json`。
+估價帶在 `watch/communities.json`。已成交戶用社區的 `exclude` 過濾（例如西門大院 17F / 31.7 坪）。
