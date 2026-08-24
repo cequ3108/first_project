@@ -33,6 +33,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install fetch dependencies
+        run: pip install -r requirements.txt
+
       - name: Fetch listings, store prices, email report
         run: python3 watch/daily_report.py --publish-issue --send-email --commit
 

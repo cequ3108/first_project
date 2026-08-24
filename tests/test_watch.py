@@ -15,6 +15,7 @@ from analyze import (  # noqa: E402
     sane_original,
 )
 from emailer import markdown_to_html  # noqa: E402
+from fetch_591 import parse_sale_list_payload  # noqa: E402
 from history import match_previous, upsert_history  # noqa: E402
 from render import render_report  # noqa: E402
 
@@ -25,6 +26,15 @@ def load_config():
 
 def load_fixture():
     return json.loads((ROOT / "tests" / "fixtures" / "sale_list_sample.json").read_text(encoding="utf-8"))["items"]
+
+
+class FetchParseTests(unittest.TestCase):
+    def test_empty_items_ok(self):
+        self.assertEqual(parse_sale_list_payload({"status": 1, "data": {"items": []}}), [])
+
+    def test_rejects_failed_status(self):
+        with self.assertRaises(RuntimeError):
+            parse_sale_list_payload({"status": 0, "msg": "forbidden"})
 
 
 class ParseTests(unittest.TestCase):
