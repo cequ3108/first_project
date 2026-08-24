@@ -320,5 +320,24 @@ class WenlinyanTests(unittest.TestCase):
         self.assertFalse(valued["in_fair"])
 
 
+class ZangmeiTests(unittest.TestCase):
+    def test_top_floor_transfer_in_fair(self):
+        community = load_config()["communities"][7]
+        self.assertEqual(community["id"], "zangmei-omotesando")
+        valued = apply_valuation(
+            {
+                "floor": 20,
+                "area": 38.74,
+                "ask": 1530,
+                "layout": "2房",
+                "house_id": "20546471",
+                "url": "https://example.com",
+            },
+            community,
+        )
+        self.assertEqual(valued["fair"], 1580)
+        self.assertTrue(valued["in_fair"])
+
+
 if __name__ == "__main__":
     unittest.main()

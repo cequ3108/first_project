@@ -424,6 +424,74 @@
           "par_ping": 42.0
         }
       ]
+    },
+    {
+      "id": "zangmei-omotesando",
+      "name": "藏美表參道",
+      "market_id": 5885447,
+      "sale_url": "https://market.591.com.tw/5885447/sale",
+      "overrides": [
+        {
+          "match": {"floor": 9, "area": 29.87, "area_tol": 0.2},
+          "cheap": 1220,
+          "fair": 1280,
+          "par": 1330,
+          "note": "1+1／兩房含車"
+        },
+        {
+          "match": {"floor": 16, "area": 28.22, "area_tol": 0.2},
+          "cheap": 1210,
+          "fair": 1280,
+          "par": 1320,
+          "note": "兩房高樓含車"
+        },
+        {
+          "match": {"floor": 13, "area": 29.87, "area_tol": 0.2},
+          "cheap": 1240,
+          "fair": 1320,
+          "par": 1380,
+          "note": "兩房含車"
+        },
+        {
+          "match": {"floor": 20, "area": 38.74, "area_tol": 0.2},
+          "cheap": 1480,
+          "fair": 1580,
+          "par": 1660,
+          "note": "頂樓兩房平轉，低於113年同社區成交帶"
+        },
+        {
+          "match": {"floor": 6, "area": 39.0, "area_tol": 0.2},
+          "cheap": 1480,
+          "fair": 1560,
+          "par": 1640,
+          "note": "兩房中低樓"
+        },
+        {
+          "match": {"floor": 20, "area": 41.84, "area_tol": 0.2},
+          "cheap": 1680,
+          "fair": 1800,
+          "par": 1900,
+          "note": "頂樓，同坪113-06成交1627"
+        }
+      ],
+      "bands": [
+        {
+          "id": "small_2br",
+          "min_area": 22,
+          "max_area": 34,
+          "cheap_ping": 41.0,
+          "fair_ping": 43.0,
+          "par_ping": 44.5
+        },
+        {
+          "id": "mid_2br",
+          "min_area": 34,
+          "max_area": 46,
+          "cheap_ping": 40.0,
+          "fair_ping": 42.5,
+          "par_ping": 44.5
+        }
+      ]
     }
   ]
 }
