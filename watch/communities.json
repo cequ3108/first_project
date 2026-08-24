@@ -384,6 +384,46 @@
           "par_ping": 38.0
         }
       ]
+    },
+    {
+      "id": "wenlinyan",
+      "name": "國泰文林硯",
+      "market_id": 39784,
+      "sale_url": "https://market.591.com.tw/39784/sale",
+      "overrides": [
+        {
+          "match": {"floor": 11, "area": 86.75, "area_tol": 0.2},
+          "cheap": 3300,
+          "fair": 3510,
+          "par": 3650,
+          "note": "三房雙車，對115-04 24F 88坪3360"
+        },
+        {
+          "match": {"floor": 23, "area": 68.92, "area_tol": 0.2},
+          "cheap": 2900,
+          "fair": 3100,
+          "par": 3250,
+          "note": "高樓三房，對115-06 15F 65坪2626"
+        }
+      ],
+      "bands": [
+        {
+          "id": "mid",
+          "min_area": 60,
+          "max_area": 75,
+          "cheap_ping": 39.0,
+          "fair_ping": 42.0,
+          "par_ping": 44.5
+        },
+        {
+          "id": "xl",
+          "min_area": 75,
+          "max_area": 100,
+          "cheap_ping": 38.0,
+          "fair_ping": 40.5,
+          "par_ping": 42.0
+        }
+      ]
     }
   ]
 }

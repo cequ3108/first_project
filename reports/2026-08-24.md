@@ -1,7 +1,7 @@
-# 遠雄北府苑、西門大院、遠雄新源邸、國泰文海硯、國泰磐耘、允將海安 每日盯盤
+# 遠雄北府苑、西門大院、遠雄新源邸、國泰文海硯、國泰磐耘、允將海安、國泰文林硯 每日盯盤
 
-- 產出時間（台灣）：**2026-08-24 11:31**
-- 社區數：**6**
+- 產出時間（台灣）：**2026-08-24 11:36**
+- 社區數：**7**
 
 ## 一、有沒有掉入合理價
 
@@ -13,7 +13,7 @@
 
 ### 允將海安
 
-新出現且已在合理價內：
+原本就在合理價內：
 
 - **3F/24F／3房／54.00坪** 開價 **1780萬**，合理價 1780萬，平價 1840萬（3+1低樓，現況開價貼近111年同坪預售成交）　[20468817](https://sale.591.com.tw/home/house/detail/2/20468817.html)
 
@@ -24,7 +24,7 @@
 - **10F/15F／2房／35.05坪** 開價 **1498萬**　591已降78萬（1576→1498）　[20167173](https://sale.591.com.tw/home/house/detail/2/20167173.html)、[20506693](https://sale.591.com.tw/home/house/detail/2/20506693.html)、[20592426](https://sale.591.com.tw/home/house/detail/2/20592426.html)、[20616328](https://sale.591.com.tw/home/house/detail/2/20616328.html)、[20626143](https://sale.591.com.tw/home/house/detail/2/20626143.html)、[20732271](https://sale.591.com.tw/home/house/detail/2/20732271.html)
 - **4F/15F／3房／42.49坪** 開價 **2068萬**　591已降100萬（2168→2068）　[20447175](https://sale.591.com.tw/home/house/detail/2/20447175.html)、[20479121](https://sale.591.com.tw/home/house/detail/2/20479121.html)、[20481792](https://sale.591.com.tw/home/house/detail/2/20481792.html)、[20499351](https://sale.591.com.tw/home/house/detail/2/20499351.html)、[20520987](https://sale.591.com.tw/home/house/detail/2/20520987.html)、[20522290](https://sale.591.com.tw/home/house/detail/2/20522290.html)
 - **2F/15F／2+1房／45.12坪** 開價 **2088萬**　591已降100萬（2188→2088）　[20095752](https://sale.591.com.tw/home/house/detail/2/20095752.html)、[20446975](https://sale.591.com.tw/home/house/detail/2/20446975.html)、[20456507](https://sale.591.com.tw/home/house/detail/2/20456507.html)、[20487111](https://sale.591.com.tw/home/house/detail/2/20487111.html)、[20488228](https://sale.591.com.tw/home/house/detail/2/20488228.html)、[20540814](https://sale.591.com.tw/home/house/detail/2/20540814.html)
-- **6F/15F／2+1房／44.76坪** 開價 **2098萬**　591已降102萬（2200→2098）　[20112445](https://sale.591.com.tw/home/house/detail/2/20112445.html)、[20716760](https://sale.591.com.tw/home/house/detail/2/20716760.html)、[20750272](https://sale.591.com.tw/home/house/detail/2/20750272.html)、[20766451](https://sale.591.com.tw/home/house/detail/2/20766451.html)、[24927548](https://sale.591.com.tw/home/house/detail/2/24927548.html)
+- **6F/15F／2+1房／44.76坪** 開價 **2098萬**　591已降102萬（2200→2098）　[20112445](https://sale.591.com.tw/home/house/detail/2/20112445.html)、[20716760](https://sale.591.com.tw/home/house/detail/2/20716760.html)、[20750272](https://sale.591.com.tw/home/house/detail/2/20750272.html)、[20766451](https://sale.591.com.tw/home/house/detail/2/20766451.html)
 
 ## 三、遠雄北府苑｜開價／便宜價／合理價／平價
 
@@ -111,6 +111,18 @@
 
 單位：萬、含車（若該則標含車位）。超出合理 = 開價 − 合理價。
 
+## 九、國泰文林硯｜開價／便宜價／合理價／平價
+
+國泰文林硯：在售 4 則，去重後 **2** 戶。2 房與 3 房同一張表。
+來源：[https://market.591.com.tw/39784/sale](https://market.591.com.tw/39784/sale)
+
+| 戶 | 格局 | 樓層 | 坪數 | 開價 | 便宜價 | 合理價 | 平價 | 超出合理 | 降價 |
+|---|---|---|---:|---:|---:|---:|---:|---:|---|
+| 11F-86.76-3房 | 3房 | 11F/24F | 86.76 | 3688 | 3300 | 3510 | 3650 | +178 | 未見 |
+| 23F-68.93-3房 | 3房 | 23F/24F | 68.93 | 3958 | 2900 | 3100 | 3250 | +858 | 未見 |
+
+單位：萬、含車（若該則標含車位）。超出合理 = 開價 − 合理價。
+
 ## 說明
 
 - **便宜價**：買方優勢價，要有讓價空間才談得下來。
@@ -124,3 +136,4 @@
 - 國泰文海硯約 9 年、大坪數為主。近一年同社區大戶實價約 33–43 萬／坪，開價若到 45 萬／坪以上通常偏貴。
 - 國泰磐耘是東區預售、591 標已完銷，交屋約 2026 下半年。牌價約 47–53 萬／坪；換約／新成屋先用 42／45／48 萬／坪當便宜／合理／平價。
 - 允將海安約 1 年新成屋。111 年同社區 53 坪預售成交約 33–35 萬／坪；低樓未住若開到這個帶可以認真看，高樓景觀另加。
+- 國泰文林硯約 8 年，與文海硯同帶。近半年同社區大戶實價約 38–43 萬／坪；高樓若開到 50 萬／坪以上通常偏貴。

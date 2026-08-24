@@ -300,5 +300,25 @@ class YunjiangTests(unittest.TestCase):
         self.assertTrue(valued["in_fair"])
 
 
+class WenlinyanTests(unittest.TestCase):
+    def test_dual_parking_three_bed(self):
+        community = load_config()["communities"][6]
+        self.assertEqual(community["id"], "wenlinyan")
+        valued = apply_valuation(
+            {
+                "floor": 11,
+                "area": 86.76,
+                "ask": 3688,
+                "layout": "3房",
+                "house_id": "20639198",
+                "url": "https://example.com",
+            },
+            community,
+        )
+        self.assertEqual(valued["fair"], 3510)
+        self.assertEqual(valued["par"], 3650)
+        self.assertFalse(valued["in_fair"])
+
+
 if __name__ == "__main__":
     unittest.main()

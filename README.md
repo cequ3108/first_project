@@ -6,6 +6,7 @@
 - [西門大院](https://market.591.com.tw/3681545/sale)
 - [遠雄新源邸](https://market.591.com.tw/39785/sale)
 - [國泰文海硯](https://market.591.com.tw/39711/sale)
+- [國泰文林硯](https://market.591.com.tw/39784/sale)
 - [國泰磐耘](https://market.591.com.tw/5892392/sale)
 - [允將海安](https://market.591.com.tw/3694974/sale)
 
