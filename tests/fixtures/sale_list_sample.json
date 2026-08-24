@@ -1,0 +1,112 @@
+{
+  "items": [
+    {
+      "houseid": "20716760",
+      "title": "遠雄北府苑面中庭輕奢2房+平車",
+      "price_v": {"price": "2,098", "unit": "萬"},
+      "room": "2房2廳",
+      "area_v": {"area": "44.75", "unit": "坪"},
+      "floor": "6樓",
+      "floor_en": "6F/15F",
+      "is_discounted": "1",
+      "original_price": "2200萬",
+      "label": ["含車位"]
+    },
+    {
+      "houseid": "20750272",
+      "title": "愛上公園旁遠雄北府苑裝潢2+1平面車位",
+      "price_v": {"price": "2,098", "unit": "萬"},
+      "room": "3房2廳",
+      "area_v": {"area": "44.76", "unit": "坪"},
+      "floor": "6樓",
+      "floor_en": "6F/15F",
+      "is_discounted": "0",
+      "original_price": "萬",
+      "label": ["含車位"]
+    },
+    {
+      "houseid": "20167173",
+      "title": "遠雄北府苑兩房高樓平車",
+      "price_v": {"price": "1,498", "unit": "萬"},
+      "room": "2房1廳",
+      "area_v": {"area": "34.84", "unit": "坪"},
+      "floor": "10樓",
+      "floor_en": "10F/15F",
+      "is_discounted": "1",
+      "original_price": "1576萬",
+      "label": ["含車位"]
+    },
+    {
+      "houseid": "20616328",
+      "title": "獨家遠雄北府苑高樓景觀兩房平車",
+      "price_v": {"price": "1,498", "unit": "萬"},
+      "room": "2房2廳",
+      "area_v": {"area": "30.05", "unit": "坪"},
+      "floor": "10樓",
+      "floor_en": "10F/15F",
+      "is_discounted": "0",
+      "original_price": "萬",
+      "label": ["含車位"]
+    },
+    {
+      "houseid": "20506693",
+      "title": "遠雄北府苑高樓景觀兩房平車",
+      "price_v": {"price": "1,498", "unit": "萬"},
+      "room": "2房2廳",
+      "area_v": {"area": "35.05", "unit": "坪"},
+      "floor": "10樓",
+      "floor_en": "10F/15F",
+      "is_discounted": "1",
+      "original_price": "3580萬",
+      "label": ["含車位"]
+    },
+    {
+      "houseid": "20479121",
+      "title": "遠雄北府苑樹海溫馨裝潢三房平車",
+      "price_v": {"price": "2,068", "unit": "萬"},
+      "room": "3房2廳",
+      "area_v": {"area": "42.49", "unit": "坪"},
+      "floor": "4樓",
+      "floor_en": "4F/15F",
+      "is_discounted": "0",
+      "original_price": "萬",
+      "label": ["含車位"]
+    },
+    {
+      "houseid": "20481792",
+      "title": "遠雄北府苑裝潢美三房",
+      "price_v": {"price": "2,068", "unit": "萬"},
+      "room": "3房2廳",
+      "area_v": {"area": "42.49", "unit": "坪"},
+      "floor": "4樓",
+      "floor_en": "4F/15F",
+      "is_discounted": "1",
+      "original_price": "2168萬",
+      "label": ["含車位"]
+    },
+    {
+      "houseid": "20461601",
+      "title": "遠雄北府苑朝南兩房平面車位",
+      "price_v": {"price": "2,168", "unit": "萬"},
+      "room": "2房2廳",
+      "area_v": {"area": "43.03", "unit": "坪"},
+      "floor": "3樓",
+      "floor_en": "3F/15F",
+      "is_discounted": "0",
+      "original_price": "萬",
+      "label": ["含車位"]
+    },
+    {
+      "houseid": "bargain001",
+      "title": "測試掉入合理價的小兩房",
+      "price_v": {"price": "1,350", "unit": "萬"},
+      "room": "2房1廳",
+      "area_v": {"area": "34.80", "unit": "坪"},
+      "floor": "8樓",
+      "floor_en": "8F/15F",
+      "is_discounted": "1",
+      "original_price": "1480萬",
+      "label": ["含車位"]
+    }
+  ]
+}

@@ -1,0 +1,675 @@
+{
+  "mail_to": "cequ3108@gmail.com",
+  "communities": [
+    {
+      "id": "beifu-yuan",
+      "name": "遠雄北府苑",
+      "market_id": 102191,
+      "sale_url": "https://market.591.com.tw/102191/sale",
+      "overrides": [
+        {
+          "match": {"floor": 10, "area": 34.9, "area_tol": 1.2},
+          "cheap": 1320,
+          "fair": 1380,
+          "par": 1420,
+          "note": "小兩房含平車"
+        },
+        {
+          "match": {"floor": 4, "area": 42.48, "area_tol": 0.25},
+          "cheap": 1720,
+          "fair": 1820,
+          "par": 1900,
+          "note": "三房／樹海戶"
+        },
+        {
+          "match": {"floor": 6, "area": 44.75, "area_tol": 0.25},
+          "cheap": 1800,
+          "fair": 1880,
+          "par": 1960,
+          "note": "2+1 面中庭"
+        },
+        {
+          "match": {"floor": 3, "area": 43.03, "area_tol": 0.25},
+          "cheap": 1730,
+          "fair": 1820,
+          "par": 1900,
+          "note": "兩房朝南"
+        },
+        {
+          "match": {"floor": 14, "area": 47.05, "area_tol": 0.25},
+          "cheap": 1930,
+          "fair": 2040,
+          "par": 2140,
+          "note": "三房高樓朝南"
+        },
+        {
+          "match": {"floor": 9, "area": 51.85, "area_tol": 0.25},
+          "cheap": 2070,
+          "fair": 2180,
+          "par": 2280,
+          "note": "大三房朝南"
+        },
+        {
+          "match": {"floor": 12, "area": 48.05, "area_tol": 0.25},
+          "cheap": 1980,
+          "fair": 2100,
+          "par": 2200,
+          "note": "三房裝潢高樓"
+        },
+        {
+          "match": {"floor": 10, "area": 42.49, "area_tol": 0.25},
+          "cheap": 1770,
+          "fair": 1870,
+          "par": 1960,
+          "note": "2+1 高樓"
+        },
+        {
+          "match": {"floor": 2, "area": 45.11, "area_tol": 0.25},
+          "cheap": 1720,
+          "fair": 1820,
+          "par": 1900,
+          "note": "2+1 低樓層"
+        }
+      ],
+      "bands": [
+        {
+          "id": "small_2br",
+          "min_area": 28,
+          "max_area": 38,
+          "cheap_ping": 37.9,
+          "fair_ping": 39.6,
+          "par_ping": 40.8
+        },
+        {
+          "id": "mid",
+          "min_area": 38,
+          "max_area": 46.5,
+          "cheap_ping": 40.5,
+          "fair_ping": 42.8,
+          "par_ping": 44.7
+        },
+        {
+          "id": "large",
+          "min_area": 46.5,
+          "max_area": 50,
+          "cheap_ping": 41.0,
+          "fair_ping": 43.4,
+          "par_ping": 45.5
+        },
+        {
+          "id": "xl",
+          "min_area": 50,
+          "max_area": 60,
+          "cheap_ping": 39.9,
+          "fair_ping": 42.0,
+          "par_ping": 44.0
+        }
+      ]
+    },
+    {
+      "id": "ximen-dayuan",
+      "name": "西門大院",
+      "market_id": 3681545,
+      "sale_url": "https://market.591.com.tw/3681545/sale",
+      "exclude": [
+        {
+          "house_ids": ["20325148", "24909466"],
+          "match": {"floor": 17, "area": 31.7, "area_tol": 0.3},
+          "reason": "已成交"
+        }
+      ],
+      "overrides": [
+        {
+          "match": {"floor": 10, "area": 24.22, "area_tol": 0.2},
+          "cheap": 980,
+          "fair": 1040,
+          "par": 1100,
+          "note": "小兩房"
+        },
+        {
+          "match": {"floor": 4, "area": 24.22, "area_tol": 0.2},
+          "cheap": 960,
+          "fair": 1020,
+          "par": 1080,
+          "note": "小兩房低樓自售"
+        },
+        {
+          "match": {"floor": 17, "area": 31.7, "area_tol": 0.2},
+          "cheap": 1140,
+          "fair": 1220,
+          "par": 1280,
+          "note": "兩房高樓自售"
+        },
+        {
+          "match": {"floor": 12, "area": 33.87, "area_tol": 0.2},
+          "cheap": 1220,
+          "fair": 1300,
+          "par": 1360,
+          "note": "兩房含車"
+        },
+        {
+          "match": {"floor": 23, "area": 44.04, "area_tol": 0.2},
+          "cheap": 1760,
+          "fair": 1860,
+          "par": 1940,
+          "note": "三房次頂樓"
+        },
+        {
+          "match": {"floor": 4, "area": 47.18, "area_tol": 0.2},
+          "cheap": 1720,
+          "fair": 1840,
+          "par": 1920,
+          "note": "大三房低樓"
+        },
+        {
+          "match": {"floor": 15, "area": 60.31, "area_tol": 0.2},
+          "cheap": 2480,
+          "fair": 2680,
+          "par": 2820,
+          "note": "四房"
+        },
+        {
+          "match": {"floor": 22, "area": 67.79, "area_tol": 0.2},
+          "cheap": 2520,
+          "fair": 2720,
+          "par": 2860,
+          "note": "大四房雙平車"
+        }
+      ],
+      "bands": [
+        {
+          "id": "compact",
+          "min_area": 20,
+          "max_area": 28,
+          "cheap_ping": 40.5,
+          "fair_ping": 43.0,
+          "par_ping": 45.5
+        },
+        {
+          "id": "small_2br",
+          "min_area": 28,
+          "max_area": 38,
+          "cheap_ping": 36.0,
+          "fair_ping": 38.5,
+          "par_ping": 40.5
+        },
+        {
+          "id": "mid_3br",
+          "min_area": 38,
+          "max_area": 52,
+          "cheap_ping": 39.0,
+          "fair_ping": 41.5,
+          "par_ping": 43.5
+        },
+        {
+          "id": "large_4br",
+          "min_area": 52,
+          "max_area": 80,
+          "cheap_ping": 41.0,
+          "fair_ping": 44.5,
+          "par_ping": 47.0
+        }
+      ]
+    },
+    {
+      "id": "xinyuan-di",
+      "name": "遠雄新源邸",
+      "market_id": 39785,
+      "sale_url": "https://market.591.com.tw/39785/sale",
+      "overrides": [
+        {
+          "match": {"floor": 6, "area": 28.96, "area_tol": 0.2},
+          "cheap": 1080,
+          "fair": 1160,
+          "par": 1200,
+          "note": "兩房含車，對115-06同坪成交1200"
+        },
+        {
+          "match": {"floor": 17, "area": 49.76, "area_tol": 0.25},
+          "cheap": 1820,
+          "fair": 1920,
+          "par": 1990,
+          "note": "高樓3改2含平車"
+        },
+        {
+          "match": {"floor": 4, "area": 49.72, "area_tol": 0.25},
+          "cheap": 1780,
+          "fair": 1880,
+          "par": 1980,
+          "note": "三房低樓未住"
+        },
+        {
+          "match": {"floor": 15, "area": 49.85, "area_tol": 0.25},
+          "cheap": 1920,
+          "fair": 2020,
+          "par": 2120,
+          "note": "三房高樓裝潢"
+        }
+      ],
+      "bands": [
+        {
+          "id": "small_2br",
+          "min_area": 24,
+          "max_area": 36,
+          "cheap_ping": 37.3,
+          "fair_ping": 40.0,
+          "par_ping": 41.5
+        },
+        {
+          "id": "mid",
+          "min_area": 36,
+          "max_area": 55,
+          "cheap_ping": 36.5,
+          "fair_ping": 38.5,
+          "par_ping": 40.0
+        }
+      ]
+    },
+    {
+      "id": "wenhaiyan",
+      "name": "國泰文海硯",
+      "market_id": 39711,
+      "sale_url": "https://market.591.com.tw/39711/sale",
+      "overrides": [
+        {
+          "match": {"floor": 7, "area": 76.15, "area_tol": 0.2},
+          "cheap": 2780,
+          "fair": 3010,
+          "par": 3200,
+          "note": "三房含車，對114-08 16F同坪3116與115-05 2F 2376"
+        },
+        {
+          "match": {"floor": 5, "area": 83.87, "area_tol": 0.2},
+          "cheap": 2940,
+          "fair": 3150,
+          "par": 3360,
+          "note": "大坪數精品，對114-09 6F 95坪3272"
+        }
+      ],
+      "bands": [
+        {
+          "id": "large",
+          "min_area": 60,
+          "max_area": 90,
+          "cheap_ping": 36.5,
+          "fair_ping": 39.5,
+          "par_ping": 42.0
+        },
+        {
+          "id": "xl",
+          "min_area": 90,
+          "max_area": 120,
+          "cheap_ping": 35.0,
+          "fair_ping": 37.5,
+          "par_ping": 40.0
+        }
+      ]
+    },
+    {
+      "id": "panyun",
+      "name": "國泰磐耘",
+      "market_id": 5892392,
+      "sale_url": "https://market.591.com.tw/5892392/sale",
+      "empty_note": "東區預售、591 標已完銷，交屋約 2026 下半年。目前沒有中古屋；出現換約會自動進表。預售牌價約 47–53 萬／坪、總價約 3700–4200 萬（車位另約 170–200 萬）。格局為三房 56–60 坪、3+1 房約 71 坪。",
+      "overrides": [],
+      "bands": [
+        {
+          "id": "three_br",
+          "min_area": 50,
+          "max_area": 66,
+          "cheap_ping": 42.0,
+          "fair_ping": 45.0,
+          "par_ping": 48.0
+        },
+        {
+          "id": "three_plus",
+          "min_area": 66,
+          "max_area": 80,
+          "cheap_ping": 42.0,
+          "fair_ping": 45.0,
+          "par_ping": 48.0
+        }
+      ]
+    },
+    {
+      "id": "yunjiang-haian",
+      "name": "允將海安",
+      "market_id": 3694974,
+      "sale_url": "https://market.591.com.tw/3694974/sale",
+      "overrides": [
+        {
+          "match": {"floor": 4, "area": 48.85, "area_tol": 0.3},
+          "cheap": 1580,
+          "fair": 1660,
+          "par": 1720,
+          "note": "2+1可隔三房，全新未住"
+        },
+        {
+          "match": {"floor": 3, "area": 54.0, "area_tol": 0.25},
+          "cheap": 1680,
+          "fair": 1780,
+          "par": 1840,
+          "note": "3+1低樓，現況開價貼近111年同坪預售成交"
+        },
+        {
+          "match": {"floor": 22, "area": 53.08, "area_tol": 0.25},
+          "cheap": 1920,
+          "fair": 2040,
+          "par": 2140,
+          "note": "高樓三房景觀"
+        },
+        {
+          "match": {"floor": 7, "area": 55.62, "area_tol": 0.25},
+          "cheap": 1980,
+          "fair": 2120,
+          "par": 2240,
+          "note": "中樓四房"
+        },
+        {
+          "match": {"floor": 23, "area": 52.64, "area_tol": 0.25},
+          "cheap": 1980,
+          "fair": 2100,
+          "par": 2220,
+          "note": "次頂樓三房"
+        }
+      ],
+      "bands": [
+        {
+          "id": "mid",
+          "min_area": 45,
+          "max_area": 52,
+          "cheap_ping": 32.3,
+          "fair_ping": 34.0,
+          "par_ping": 35.2
+        },
+        {
+          "id": "large",
+          "min_area": 52,
+          "max_area": 60,
+          "cheap_ping": 33.5,
+          "fair_ping": 36.0,
+          "par_ping": 38.0
+        }
+      ]
+    },
+    {
+      "id": "wenlinyan",
+      "name": "國泰文林硯",
+      "market_id": 39784,
+      "sale_url": "https://market.591.com.tw/39784/sale",
+      "overrides": [
+        {
+          "match": {"floor": 11, "area": 86.75, "area_tol": 0.2},
+          "cheap": 3300,
+          "fair": 3510,
+          "par": 3650,
+          "note": "三房雙車，對115-04 24F 88坪3360"
+        },
+        {
+          "match": {"floor": 23, "area": 68.92, "area_tol": 0.2},
+          "cheap": 2900,
+          "fair": 3100,
+          "par": 3250,
+          "note": "高樓三房，對115-06 15F 65坪2626"
+        }
+      ],
+      "bands": [
+        {
+          "id": "mid",
+          "min_area": 60,
+          "max_area": 75,
+          "cheap_ping": 39.0,
+          "fair_ping": 42.0,
+          "par_ping": 44.5
+        },
+        {
+          "id": "xl",
+          "min_area": 75,
+          "max_area": 100,
+          "cheap_ping": 38.0,
+          "fair_ping": 40.5,
+          "par_ping": 42.0
+        }
+      ]
+    },
+    {
+      "id": "zangmei-omotesando",
+      "name": "藏美表參道",
+      "market_id": 5885447,
+      "sale_url": "https://market.591.com.tw/5885447/sale",
+      "overrides": [
+        {
+          "match": {"floor": 9, "area": 29.87, "area_tol": 0.2},
+          "cheap": 1220,
+          "fair": 1280,
+          "par": 1330,
+          "note": "1+1／兩房含車"
+        },
+        {
+          "match": {"floor": 16, "area": 28.22, "area_tol": 0.2},
+          "cheap": 1210,
+          "fair": 1280,
+          "par": 1320,
+          "note": "兩房高樓含車"
+        },
+        {
+          "match": {"floor": 13, "area": 29.87, "area_tol": 0.2},
+          "cheap": 1240,
+          "fair": 1320,
+          "par": 1380,
+          "note": "兩房含車"
+        },
+        {
+          "match": {"floor": 20, "area": 38.74, "area_tol": 0.2},
+          "cheap": 1480,
+          "fair": 1580,
+          "par": 1660,
+          "note": "頂樓兩房平轉，低於113年同社區成交帶"
+        },
+        {
+          "match": {"floor": 6, "area": 39.0, "area_tol": 0.2},
+          "cheap": 1480,
+          "fair": 1560,
+          "par": 1640,
+          "note": "兩房中低樓"
+        },
+        {
+          "match": {"floor": 20, "area": 41.84, "area_tol": 0.2},
+          "cheap": 1680,
+          "fair": 1800,
+          "par": 1900,
+          "note": "頂樓，同坪113-06成交1627"
+        }
+      ],
+      "bands": [
+        {
+          "id": "small_2br",
+          "min_area": 22,
+          "max_area": 34,
+          "cheap_ping": 41.0,
+          "fair_ping": 43.0,
+          "par_ping": 44.5
+        },
+        {
+          "id": "mid_2br",
+          "min_area": 34,
+          "max_area": 46,
+          "cheap_ping": 40.0,
+          "fair_ping": 42.5,
+          "par_ping": 44.5
+        }
+      ]
+    },
+    {
+      "id": "dingmei",
+      "name": "遠雄頂美",
+      "market_id": 101914,
+      "sale_url": "https://market.591.com.tw/101914/sale",
+      "overrides": [
+        {
+          "match": {"floor": 12, "area": 34.66, "area_tol": 0.2},
+          "cheap": 1260,
+          "fair": 1340,
+          "par": 1400,
+          "note": "兩房含車，對115-01 18F 45坪1475"
+        },
+        {
+          "match": {"floor": 15, "area": 47.2, "area_tol": 0.2},
+          "cheap": 1640,
+          "fair": 1740,
+          "par": 1810,
+          "note": "三房含車，對115-05 10F 54坪1815"
+        },
+        {
+          "match": {"floor": 7, "area": 47.1, "area_tol": 0.2},
+          "cheap": 1620,
+          "fair": 1720,
+          "par": 1780,
+          "note": "三房中低樓"
+        },
+        {
+          "match": {"floor": 18, "area": 47.2, "area_tol": 0.2},
+          "cheap": 1720,
+          "fair": 1820,
+          "par": 1900,
+          "note": "高樓三房海景"
+        },
+        {
+          "match": {"floor": 22, "area": 47.2, "area_tol": 0.2},
+          "cheap": 1780,
+          "fair": 1900,
+          "par": 2020,
+          "note": "頂樓兩房"
+        }
+      ],
+      "bands": [
+        {
+          "id": "small_2br",
+          "min_area": 28,
+          "max_area": 40,
+          "cheap_ping": 36.2,
+          "fair_ping": 38.5,
+          "par_ping": 40.3
+        },
+        {
+          "id": "mid_3br",
+          "min_area": 40,
+          "max_area": 56,
+          "cheap_ping": 34.8,
+          "fair_ping": 36.6,
+          "par_ping": 38.2
+        }
+      ]
+    },
+    {
+      "id": "fuli-zhenbang",
+      "name": "富立真邦",
+      "market_id": 39226,
+      "sale_url": "https://market.591.com.tw/39226/sale",
+      "overrides": [
+        {
+          "match": {"floor": 3, "area": 68.21, "area_tol": 0.35},
+          "cheap": 2880,
+          "fair": 3060,
+          "par": 3180,
+          "note": "低樓三房平車，對115-05 7F 68坪2750與115-06 7F 67坪3400"
+        },
+        {
+          "match": {"floor": 13, "area": 67.94, "area_tol": 0.25},
+          "cheap": 3120,
+          "fair": 3300,
+          "par": 3440,
+          "note": "高樓三房大車位，對114-08 12F 67坪3600"
+        }
+      ],
+      "bands": [
+        {
+          "id": "mid_3br",
+          "min_area": 40,
+          "max_area": 62,
+          "cheap_ping": 47.5,
+          "fair_ping": 51.0,
+          "par_ping": 53.5
+        },
+        {
+          "id": "large",
+          "min_area": 62,
+          "max_area": 80,
+          "cheap_ping": 44.0,
+          "fair_ping": 47.0,
+          "par_ping": 50.0
+        },
+        {
+          "id": "xl",
+          "min_area": 80,
+          "max_area": 140,
+          "cheap_ping": 38.0,
+          "fair_ping": 42.0,
+          "par_ping": 45.0
+        }
+      ]
+    },
+    {
+      "id": "fuli-hezhu",
+      "name": "富立和築",
+      "market_id": 39225,
+      "sale_url": "https://market.591.com.tw/39225/sale",
+      "overrides": [
+        {
+          "match": {"floor": 6, "area": 55.62, "area_tol": 0.3},
+          "cheap": 1980,
+          "fair": 2140,
+          "par": 2260,
+          "note": "中低樓三房平車，對115-01 7F 46坪1990與114-12 8F 51坪2200"
+        },
+        {
+          "match": {"floor": 7, "area": 40.88, "area_tol": 0.2},
+          "cheap": 1540,
+          "fair": 1680,
+          "par": 1780,
+          "note": "兩房含車，對113-10 10F 51坪1950"
+        },
+        {
+          "match": {"floor": 10, "area": 56.54, "area_tol": 0.2},
+          "cheap": 2240,
+          "fair": 2410,
+          "par": 2550,
+          "note": "中高樓三房平車"
+        },
+        {
+          "match": {"floor": 15, "area": 55.8, "area_tol": 1.6},
+          "cheap": 2320,
+          "fair": 2520,
+          "par": 2650,
+          "note": "頂樓朝南三房平車，對中樓實價往上加"
+        }
+      ],
+      "bands": [
+        {
+          "id": "small_2br",
+          "min_area": 28,
+          "max_area": 44,
+          "cheap_ping": 37.5,
+          "fair_ping": 41.0,
+          "par_ping": 43.5
+        },
+        {
+          "id": "mid_3br",
+          "min_area": 44,
+          "max_area": 62,
+          "cheap_ping": 37.0,
+          "fair_ping": 39.8,
+          "par_ping": 42.5
+        },
+        {
+          "id": "large",
+          "min_area": 62,
+          "max_area": 95,
+          "cheap_ping": 35.0,
+          "fair_ping": 38.0,
+          "par_ping": 40.5
+        }
+      ]
+    }
+  ]
+}

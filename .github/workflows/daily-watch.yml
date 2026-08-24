@@ -1,0 +1,42 @@
+name: 社區每日盯盤
+
+on:
+  schedule:
+    # 台灣時間每天 17:00 = UTC 09:00
+    - cron: "0 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: daily-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TZ: Asia/Taipei
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      MAIL_TO: cequ3108@gmail.com
+      MAIL_FROM: cequ3108@gmail.com
+      GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch listings, store prices, email report
+        run: python3 watch/daily_report.py --publish-issue --send-email --commit
+
+      - name: Push snapshot
+        run: |
+          git pull --rebase origin "${GITHUB_REF_NAME}" || true
+          git push origin "HEAD:${GITHUB_REF_NAME}"
