@@ -168,7 +168,7 @@ def find_or_create_issue(token: str) -> int:
             "title": ISSUE_TITLE,
             "labels": [ISSUE_LABEL],
             "body": (
-                "這則 Issue 收遠雄北府苑、西門大院的每日盯盤備份。\n\n"
+                "這則 Issue 收遠雄北府苑、西門大院、遠雄新源邸的每日盯盤備份。\n\n"
                 "正式報告會寄到信箱；這裡方便在 GitHub 上回看。"
             ),
         },

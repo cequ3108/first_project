@@ -203,6 +203,60 @@
           "par_ping": 47.0
         }
       ]
+    },
+    {
+      "id": "xinyuan-di",
+      "name": "遠雄新源邸",
+      "market_id": 39785,
+      "sale_url": "https://market.591.com.tw/39785/sale",
+      "overrides": [
+        {
+          "match": {"floor": 6, "area": 28.96, "area_tol": 0.2},
+          "cheap": 1080,
+          "fair": 1160,
+          "par": 1200,
+          "note": "兩房含車，對115-06同坪成交1200"
+        },
+        {
+          "match": {"floor": 17, "area": 49.76, "area_tol": 0.25},
+          "cheap": 1820,
+          "fair": 1920,
+          "par": 1990,
+          "note": "高樓3改2含平車"
+        },
+        {
+          "match": {"floor": 4, "area": 49.72, "area_tol": 0.25},
+          "cheap": 1780,
+          "fair": 1880,
+          "par": 1980,
+          "note": "三房低樓未住"
+        },
+        {
+          "match": {"floor": 15, "area": 49.85, "area_tol": 0.25},
+          "cheap": 1920,
+          "fair": 2020,
+          "par": 2120,
+          "note": "三房高樓裝潢"
+        }
+      ],
+      "bands": [
+        {
+          "id": "small_2br",
+          "min_area": 24,
+          "max_area": 36,
+          "cheap_ping": 37.3,
+          "fair_ping": 40.0,
+          "par_ping": 41.5
+        },
+        {
+          "id": "mid",
+          "min_area": 36,
+          "max_area": 55,
+          "cheap_ping": 36.5,
+          "fair_ping": 38.5,
+          "par_ping": 40.0
+        }
+      ]
     }
   ]
 }

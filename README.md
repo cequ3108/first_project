@@ -4,6 +4,7 @@
 
 - [遠雄北府苑](https://market.591.com.tw/102191/sale)
 - [西門大院](https://market.591.com.tw/3681545/sale)
+- [遠雄新源邸](https://market.591.com.tw/39785/sale)
 
 合併同一戶的重複刊登，算出開價、便宜價、合理價、平價，並把當天開價寫進 GitHub，隔天才能對出「有沒有降價」。
 

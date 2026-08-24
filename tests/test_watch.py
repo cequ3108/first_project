@@ -214,5 +214,27 @@ class XimenTests(unittest.TestCase):
         self.assertTrue(valued["in_fair"])
 
 
+class XinyuanTests(unittest.TestCase):
+    def test_small_two_bed_near_comp(self):
+        community = load_config()["communities"][2]
+        self.assertEqual(community["id"], "xinyuan-di")
+        valued = apply_valuation(
+            {
+                "floor": 6,
+                "area": 28.96,
+                "ask": 1198,
+                "layout": "2房",
+                "house_id": "20109397",
+                "url": "https://example.com",
+            },
+            community,
+        )
+        self.assertEqual(valued["cheap"], 1080)
+        self.assertEqual(valued["fair"], 1160)
+        self.assertEqual(valued["par"], 1200)
+        self.assertFalse(valued["in_fair"])
+        self.assertTrue(valued["in_par"])
+
+
 if __name__ == "__main__":
     unittest.main()

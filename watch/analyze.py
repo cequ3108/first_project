@@ -163,6 +163,9 @@ def merge_listings(listings: list[dict[str, Any]]) -> list[dict[str, Any]]:
     for group in groups.values():
         group = sorted(group, key=lambda x: (x["ask"], x["house_id"]))
         best = dict(group[0])
+        by_floors = max(group, key=lambda x: (x.get("total_floors") or 0))
+        best["floor_label"] = by_floors.get("floor_label") or best["floor_label"]
+        best["total_floors"] = by_floors.get("total_floors")
         originals = [x["original"] for x in group if x.get("original")]
         best["original"] = min(originals) if originals else None
         if best["original"] and best["original"] <= best["ask"]:
