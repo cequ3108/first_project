@@ -1,0 +1,109 @@
+{
+  "communities": [
+    {
+      "id": "beifu-yuan",
+      "name": "遠雄北府苑",
+      "market_id": 102191,
+      "sale_url": "https://market.591.com.tw/102191/sale",
+      "overrides": [
+        {
+          "match": {"floor": 10, "area": 34.9, "area_tol": 1.2},
+          "cheap": 1320,
+          "fair": 1380,
+          "par": 1420,
+          "note": "小兩房含平車"
+        },
+        {
+          "match": {"floor": 4, "area": 42.48, "area_tol": 0.25},
+          "cheap": 1720,
+          "fair": 1820,
+          "par": 1900,
+          "note": "三房／樹海戶"
+        },
+        {
+          "match": {"floor": 6, "area": 44.75, "area_tol": 0.25},
+          "cheap": 1800,
+          "fair": 1880,
+          "par": 1960,
+          "note": "2+1 面中庭"
+        },
+        {
+          "match": {"floor": 3, "area": 43.03, "area_tol": 0.25},
+          "cheap": 1730,
+          "fair": 1820,
+          "par": 1900,
+          "note": "兩房朝南"
+        },
+        {
+          "match": {"floor": 14, "area": 47.05, "area_tol": 0.25},
+          "cheap": 1930,
+          "fair": 2040,
+          "par": 2140,
+          "note": "三房高樓朝南"
+        },
+        {
+          "match": {"floor": 9, "area": 51.85, "area_tol": 0.25},
+          "cheap": 2070,
+          "fair": 2180,
+          "par": 2280,
+          "note": "大三房朝南"
+        },
+        {
+          "match": {"floor": 12, "area": 48.05, "area_tol": 0.25},
+          "cheap": 1980,
+          "fair": 2100,
+          "par": 2200,
+          "note": "三房裝潢高樓"
+        },
+        {
+          "match": {"floor": 10, "area": 42.49, "area_tol": 0.25},
+          "cheap": 1770,
+          "fair": 1870,
+          "par": 1960,
+          "note": "2+1 高樓"
+        },
+        {
+          "match": {"floor": 2, "area": 45.11, "area_tol": 0.25},
+          "cheap": 1720,
+          "fair": 1820,
+          "par": 1900,
+          "note": "2+1 低樓層"
+        }
+      ],
+      "bands": [
+        {
+          "id": "small_2br",
+          "min_area": 28,
+          "max_area": 38,
+          "cheap_ping": 37.9,
+          "fair_ping": 39.6,
+          "par_ping": 40.8
+        },
+        {
+          "id": "mid",
+          "min_area": 38,
+          "max_area": 46.5,
+          "cheap_ping": 40.5,
+          "fair_ping": 42.8,
+          "par_ping": 44.7
+        },
+        {
+          "id": "large",
+          "min_area": 46.5,
+          "max_area": 50,
+          "cheap_ping": 41.0,
+          "fair_ping": 43.4,
+          "par_ping": 45.5
+        },
+        {
+          "id": "xl",
+          "min_area": 50,
+          "max_area": 60,
+          "cheap_ping": 39.9,
+          "fair_ping": 42.0,
+          "par_ping": 44.0
+        }
+      ]
+    }
+  ]
+}
