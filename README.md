@@ -1,6 +1,6 @@
 # 社區每日盯盤
 
-每天台灣時間 **17:00**，Cursor Automation 會抓：
+每天台灣時間 **17:00**，GitHub Action 會抓：
 
 - [遠雄北府苑](https://market.591.com.tw/102191/sale)
 - [西門大院](https://market.591.com.tw/3681545/sale)
@@ -28,11 +28,18 @@
 - 把價格寫進 `data/daily/YYYY-MM-DD.json` 與 `data/price-history.json`
 - 報告備份在 `reports/`，並回覆到 Issue「社區每日盯盤」
 
-## 每日寄信
+## 你要開的設定（Gmail Secret）
 
-由 [Cursor Automation](https://cursor.com/automations) 在台灣時間 17:00 跑 `python3 watch/daily_report.py --send-email --commit`，寄到 `cequ3108@gmail.com`。
+1. 打開這個頁面：https://github.com/cequ3108/first_project/settings/secrets/actions
+2. 按 **New repository secret**
+3. Name 填：`GMAIL_APP_PASSWORD`
+4. Secret 填 Gmail「應用程式密碼」（16 碼，不是登入密碼）
+5. 按 **Add secret**
 
-GitHub Action「社區每日盯盤」只留手動 **Run workflow** 當備援，不再每天自動跑。
+Gmail 應用程式密碼在這裡產生：https://myaccount.google.com/apppasswords  
+（帳號要先開兩步驟驗證，選「郵件」即可。）
+
+設好後可到 https://github.com/cequ3108/first_project/actions/workflows/daily-watch.yml 按 **Run workflow** 先試一次。之後每天 17:00 會自動跑。
 
 ## 本地
 
