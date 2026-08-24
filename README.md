@@ -1,36 +1,35 @@
-# 遠雄北府苑每日盯盤
+# 社區每日盯盤
 
-每天台灣時間 **17:00**，GitHub Action 會抓 [591 遠雄北府苑在售](https://market.591.com.tw/102191/sale)，合併同一戶的重複刊登，然後算出開價、便宜價、合理價、平價。
+每天台灣時間 **17:00**，GitHub Action 會抓：
 
-報告分兩塊：
+- [遠雄北府苑](https://market.591.com.tw/102191/sale)
+- [西門大院](https://market.591.com.tw/3681545/sale)
+
+合併同一戶的重複刊登，算出開價、便宜價、合理價、平價，並把當天開價寫進 GitHub，隔天才能對出「有沒有降價」。
+
+## 報告長這樣
 
 1. **有沒有掉入合理價**（開價 ≤ 合理價）
-2. **完整表格**：開價／便宜價／合理價／平價、超出合理、是否降過價
+2. **今日降價**（591 已降，或比 GitHub 上次紀錄更低）
+3. **各社區完整表**
 
-## 你會怎麼收到
+每天會：
 
-Action 會把報告回覆到 Issue「遠雄北府苑｜每日盯盤」。
+- 寄信到 `cequ3108@gmail.com`
+- 把價格寫進 `data/daily/YYYY-MM-DD.json` 與 `data/price-history.json`
+- 報告備份在 `reports/`，並回覆到 Issue「社區每日盯盤」
 
-請先：
+## 你要開的設定
 
-1. 進 GitHub → **Actions**，若被關掉請打開
-2. 合併這份 workflow 到 `master`
-3. 第一次跑完後打開該 Issue，按 **Subscribe**／Watch（或 Watch 整個 repo）
-4. GitHub 就會在每天傍晚把同一封報告寄到你的信箱
+1. 打開 repo 的 **Actions**
+2. 在 GitHub → Settings → Secrets and variables → Actions，新增 `GMAIL_APP_PASSWORD`（Gmail 應用程式密碼）
+3. 合併 workflow 到 `master` 後，可按 **Run workflow** 先跑一次
 
-也可在 Actions 頁按 **Run workflow** 手動跑一次。
-
-## 本地預覽
+## 本地
 
 ```bash
 python3 -m unittest discover -s tests -v
-python3 watch/daily_report.py
+python3 watch/daily_report.py --send-email
 ```
 
-用固定樣本、不打 591：
-
-```bash
-python3 watch/daily_report.py --fixture tests/fixtures/sale_list_sample.json
-```
-
-估價帶與指定戶在 `watch/communities.json`。之後要加社區，把 591 社區網址與格局／預算補進這個檔即可。
+估價帶在 `watch/communities.json`。

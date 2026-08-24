@@ -1,0 +1,425 @@
+{
+  "units": {
+    "beifu-yuan|10F-35.05-2房": {
+      "community_id": "beifu-yuan",
+      "name": "遠雄北府苑",
+      "uid": "10F-35.05-2房",
+      "layout": "2房",
+      "floor_label": "10F/15F",
+      "area": 35.05,
+      "house_ids": [
+        "20167173",
+        "20506693",
+        "20592426",
+        "20616328",
+        "20626143",
+        "20732271",
+        "24926374"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 1498,
+          "cheap": 1320,
+          "fair": 1380,
+          "par": 1420,
+          "over_fair": 118,
+          "drop_note": "591已降78萬（1576→1498）"
+        }
+      ]
+    },
+    "beifu-yuan|10F-42.49-2+1房": {
+      "community_id": "beifu-yuan",
+      "name": "遠雄北府苑",
+      "uid": "10F-42.49-2+1房",
+      "layout": "2+1房",
+      "floor_label": "10F/15F",
+      "area": 42.49,
+      "house_ids": [
+        "20660832"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 2028,
+          "cheap": 1770,
+          "fair": 1870,
+          "par": 1960,
+          "over_fair": 158,
+          "drop_note": "未見"
+        }
+      ]
+    },
+    "beifu-yuan|4F-42.49-3房": {
+      "community_id": "beifu-yuan",
+      "name": "遠雄北府苑",
+      "uid": "4F-42.49-3房",
+      "layout": "3房",
+      "floor_label": "4F/15F",
+      "area": 42.49,
+      "house_ids": [
+        "20447175",
+        "20479121",
+        "20481792",
+        "20499351",
+        "20520987",
+        "20522290",
+        "20528515",
+        "20528563",
+        "20555834",
+        "20556194",
+        "20663291",
+        "20685839",
+        "20705236",
+        "20728733",
+        "20732658",
+        "20736899",
+        "20739524",
+        "20755397"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 2068,
+          "cheap": 1720,
+          "fair": 1820,
+          "par": 1900,
+          "over_fair": 248,
+          "drop_note": "591已降100萬（2168→2068）"
+        }
+      ]
+    },
+    "beifu-yuan|2F-45.12-2+1房": {
+      "community_id": "beifu-yuan",
+      "name": "遠雄北府苑",
+      "uid": "2F-45.12-2+1房",
+      "layout": "2+1房",
+      "floor_label": "2F/14F",
+      "area": 45.12,
+      "house_ids": [
+        "20095752",
+        "20446975",
+        "20456507",
+        "20487111",
+        "20488228",
+        "20540814",
+        "20578964",
+        "20592651",
+        "20636322",
+        "20692120",
+        "20737326",
+        "20759278",
+        "24927626"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 2088,
+          "cheap": 1720,
+          "fair": 1820,
+          "par": 1900,
+          "over_fair": 268,
+          "drop_note": "591已降100萬（2188→2088）"
+        }
+      ]
+    },
+    "beifu-yuan|6F-44.76-2+1房": {
+      "community_id": "beifu-yuan",
+      "name": "遠雄北府苑",
+      "uid": "6F-44.76-2+1房",
+      "layout": "2+1房",
+      "floor_label": "6F/15F",
+      "area": 44.76,
+      "house_ids": [
+        "20112445",
+        "20716760",
+        "20750272",
+        "20766451"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 2098,
+          "cheap": 1800,
+          "fair": 1880,
+          "par": 1960,
+          "over_fair": 218,
+          "drop_note": "591已降102萬（2200→2098）"
+        }
+      ]
+    },
+    "beifu-yuan|14F-47.05-3房": {
+      "community_id": "beifu-yuan",
+      "name": "遠雄北府苑",
+      "uid": "14F-47.05-3房",
+      "layout": "3房",
+      "floor_label": "14F/15F",
+      "area": 47.05,
+      "house_ids": [
+        "20135808"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 2288,
+          "cheap": 1930,
+          "fair": 2040,
+          "par": 2140,
+          "over_fair": 248,
+          "drop_note": "未見"
+        }
+      ]
+    },
+    "beifu-yuan|12F-48.05-3房": {
+      "community_id": "beifu-yuan",
+      "name": "遠雄北府苑",
+      "uid": "12F-48.05-3房",
+      "layout": "3房",
+      "floor_label": "12F/15F",
+      "area": 48.05,
+      "house_ids": [
+        "20593348",
+        "20632562",
+        "20771752"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 2488,
+          "cheap": 1980,
+          "fair": 2100,
+          "par": 2200,
+          "over_fair": 388,
+          "drop_note": "未見"
+        }
+      ]
+    },
+    "beifu-yuan|9F-51.86-3房": {
+      "community_id": "beifu-yuan",
+      "name": "遠雄北府苑",
+      "uid": "9F-51.86-3房",
+      "layout": "3房",
+      "floor_label": "9F/14F",
+      "area": 51.86,
+      "house_ids": [
+        "20293512",
+        "20753553"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 2488,
+          "cheap": 2070,
+          "fair": 2180,
+          "par": 2280,
+          "over_fair": 308,
+          "drop_note": "未見"
+        }
+      ]
+    },
+    "ximen-dayuan|10F-24.22-2房": {
+      "community_id": "ximen-dayuan",
+      "name": "西門大院",
+      "uid": "10F-24.22-2房",
+      "layout": "2房",
+      "floor_label": "10F/24F",
+      "area": 24.22,
+      "house_ids": [
+        "20719576"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 1068,
+          "cheap": 980,
+          "fair": 1040,
+          "par": 1100,
+          "over_fair": 28,
+          "drop_note": "未見"
+        }
+      ]
+    },
+    "ximen-dayuan|4F-24.22-2房": {
+      "community_id": "ximen-dayuan",
+      "name": "西門大院",
+      "uid": "4F-24.22-2房",
+      "layout": "2房",
+      "floor_label": "4F/24F",
+      "area": 24.22,
+      "house_ids": [
+        "20458038"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 1188,
+          "cheap": 960,
+          "fair": 1020,
+          "par": 1080,
+          "over_fair": 168,
+          "drop_note": "未見"
+        }
+      ]
+    },
+    "ximen-dayuan|17F-31.70-2房": {
+      "community_id": "ximen-dayuan",
+      "name": "西門大院",
+      "uid": "17F-31.70-2房",
+      "layout": "2房",
+      "floor_label": "17F/24F",
+      "area": 31.7,
+      "house_ids": [
+        "20325148"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 1220,
+          "cheap": 1140,
+          "fair": 1220,
+          "par": 1280,
+          "over_fair": 0,
+          "drop_note": "未見"
+        }
+      ]
+    },
+    "ximen-dayuan|12F-33.87-2房": {
+      "community_id": "ximen-dayuan",
+      "name": "西門大院",
+      "uid": "12F-33.87-2房",
+      "layout": "2房",
+      "floor_label": "12F/24F",
+      "area": 33.87,
+      "house_ids": [
+        "20246176"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 1388,
+          "cheap": 1220,
+          "fair": 1300,
+          "par": 1360,
+          "over_fair": 88,
+          "drop_note": "未見"
+        }
+      ]
+    },
+    "ximen-dayuan|23F-44.04-3房": {
+      "community_id": "ximen-dayuan",
+      "name": "西門大院",
+      "uid": "23F-44.04-3房",
+      "layout": "3房",
+      "floor_label": "23F/24F",
+      "area": 44.04,
+      "house_ids": [
+        "20463718",
+        "20627731"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 1958,
+          "cheap": 1760,
+          "fair": 1860,
+          "par": 1940,
+          "over_fair": 98,
+          "drop_note": "未見"
+        }
+      ]
+    },
+    "ximen-dayuan|4F-47.18-3房": {
+      "community_id": "ximen-dayuan",
+      "name": "西門大院",
+      "uid": "4F-47.18-3房",
+      "layout": "3房",
+      "floor_label": "4F/24F",
+      "area": 47.18,
+      "house_ids": [
+        "20511414",
+        "20709367",
+        "24910642",
+        "24910876"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 1980,
+          "cheap": 1720,
+          "fair": 1840,
+          "par": 1920,
+          "over_fair": 140,
+          "drop_note": "未見"
+        }
+      ]
+    },
+    "ximen-dayuan|22F-67.79-4房": {
+      "community_id": "ximen-dayuan",
+      "name": "西門大院",
+      "uid": "22F-67.79-4房",
+      "layout": "4房",
+      "floor_label": "22F/24F",
+      "area": 67.79,
+      "house_ids": [
+        "20173158",
+        "20562695"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 2888,
+          "cheap": 2520,
+          "fair": 2720,
+          "par": 2860,
+          "over_fair": 168,
+          "drop_note": "未見"
+        }
+      ]
+    },
+    "ximen-dayuan|15F-60.31-4房": {
+      "community_id": "ximen-dayuan",
+      "name": "西門大院",
+      "uid": "15F-60.31-4房",
+      "layout": "4房",
+      "floor_label": "15F/24F",
+      "area": 60.31,
+      "house_ids": [
+        "20757692"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 2988,
+          "cheap": 2480,
+          "fair": 2680,
+          "par": 2820,
+          "over_fair": 308,
+          "drop_note": "未見"
+        }
+      ]
+    },
+    "beifu-yuan|3F-43.03-2房": {
+      "community_id": "beifu-yuan",
+      "name": "遠雄北府苑",
+      "uid": "3F-43.03-2房",
+      "layout": "2房",
+      "floor_label": "3F/15F",
+      "area": 43.03,
+      "house_ids": [
+        "20461601"
+      ],
+      "history": [
+        {
+          "date": "2026-08-24",
+          "ask": 2168,
+          "cheap": 1730,
+          "fair": 1820,
+          "par": 1900,
+          "over_fair": 348,
+          "drop_note": "未見"
+        }
+      ]
+    }
+  },
+  "updated_at": "2026-08-24 11:21"
+}

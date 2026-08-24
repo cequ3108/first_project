@@ -14,6 +14,8 @@ from analyze import (  # noqa: E402
     parse_wan,
     sane_original,
 )
+from emailer import markdown_to_html  # noqa: E402
+from history import match_previous, upsert_history  # noqa: E402
 from render import render_report  # noqa: E402
 
 
@@ -105,14 +107,111 @@ class ReportTests(unittest.TestCase):
         markdown = render_report(result, "2026-08-24 17:00")
         self.assertIn("一、有沒有掉入合理價", markdown)
         self.assertIn("今日新掉入合理價", markdown)
-        self.assertIn("二、開價／便宜價／合理價／平價", markdown)
+        self.assertIn("開價／便宜價／合理價／平價", markdown)
         self.assertIn("便宜價", markdown)
         self.assertIn("平價", markdown)
         self.assertIn("591已降", markdown)
+        self.assertIn("今日降價", markdown)
         small = [u for u in analyzed["units"] if u["floor"] == 10][0]
         self.assertEqual(small["fair"], 1380)
         bargain = [u for u in analyzed["units"] if u["floor"] == 8][0]
         self.assertTrue(bargain["entered_fair"])
+
+
+class HistoryTests(unittest.TestCase):
+    def test_match_by_house_id_when_uid_changes(self):
+        previous = {
+            "units": [
+                {"uid": "10F-34.84-2房", "ask": 1498, "house_ids": ["20167173", "20506693"]},
+            ]
+        }
+        current = {"uid": "10F-35.05-2房", "ask": 1460, "ads": [{"house_id": "20167173"}]}
+        prev = match_previous(current, previous)
+        self.assertEqual(prev["ask"], 1498)
+
+    def test_upsert_keeps_two_days(self):
+        history = {"units": {}}
+        day1 = {
+            "generated_at": "2026-08-24 17:00",
+            "communities": [
+                {
+                    "community_id": "ximen-dayuan",
+                    "name": "西門大院",
+                    "units": [
+                        {
+                            "uid": "17F-31.70-2房",
+                            "ask": 1220,
+                            "cheap": 1140,
+                            "fair": 1220,
+                            "par": 1280,
+                            "over_fair": 0,
+                            "drop_note": "未見",
+                            "house_ids": ["20325148"],
+                            "layout": "2房",
+                            "floor_label": "17F/24F",
+                            "area": 31.7,
+                        }
+                    ],
+                }
+            ],
+        }
+        upsert_history(history, day1)
+        day2 = {
+            "generated_at": "2026-08-25 17:00",
+            "communities": [
+                {
+                    "community_id": "ximen-dayuan",
+                    "name": "西門大院",
+                    "units": [
+                        {
+                            "uid": "17F-31.70-2房",
+                            "ask": 1190,
+                            "cheap": 1140,
+                            "fair": 1220,
+                            "par": 1280,
+                            "over_fair": -30,
+                            "drop_note": "較昨日降30萬（1220→1190）",
+                            "house_ids": ["20325148"],
+                            "layout": "2房",
+                            "floor_label": "17F/24F",
+                            "area": 31.7,
+                        }
+                    ],
+                }
+            ],
+        }
+        upsert_history(history, day2)
+        series = history["units"]["ximen-dayuan|17F-31.70-2房"]["history"]
+        self.assertEqual([x["date"] for x in series], ["2026-08-24", "2026-08-25"])
+        self.assertEqual(series[-1]["ask"], 1190)
+
+
+class EmailTests(unittest.TestCase):
+    def test_markdown_table_to_html(self):
+        html = markdown_to_html("# 標題\n\n| 戶 | 開價 |\n|---|---:|\n| A | 100 |\n")
+        self.assertIn("<h1>", html)
+        self.assertIn("<table", html)
+        self.assertIn("<th>", html)
+        self.assertIn("100", html)
+
+
+class XimenTests(unittest.TestCase):
+    def test_override_self_sale_two_bed(self):
+        community = load_config()["communities"][1]
+        self.assertEqual(community["id"], "ximen-dayuan")
+        valued = apply_valuation(
+            {
+                "floor": 17,
+                "area": 31.7,
+                "ask": 1220,
+                "layout": "2房",
+                "house_id": "20325148",
+                "url": "https://example.com",
+            },
+            community,
+        )
+        self.assertEqual(valued["fair"], 1220)
+        self.assertTrue(valued["in_fair"])
 
 
 if __name__ == "__main__":

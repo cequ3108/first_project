@@ -1,4 +1,5 @@
 {
+  "mail_to": "cequ3108@gmail.com",
   "communities": [
     {
       "id": "beifu-yuan",
@@ -102,6 +103,104 @@
           "cheap_ping": 39.9,
           "fair_ping": 42.0,
           "par_ping": 44.0
+        }
+      ]
+    },
+    {
+      "id": "ximen-dayuan",
+      "name": "西門大院",
+      "market_id": 3681545,
+      "sale_url": "https://market.591.com.tw/3681545/sale",
+      "overrides": [
+        {
+          "match": {"floor": 10, "area": 24.22, "area_tol": 0.2},
+          "cheap": 980,
+          "fair": 1040,
+          "par": 1100,
+          "note": "小兩房"
+        },
+        {
+          "match": {"floor": 4, "area": 24.22, "area_tol": 0.2},
+          "cheap": 960,
+          "fair": 1020,
+          "par": 1080,
+          "note": "小兩房低樓自售"
+        },
+        {
+          "match": {"floor": 17, "area": 31.7, "area_tol": 0.2},
+          "cheap": 1140,
+          "fair": 1220,
+          "par": 1280,
+          "note": "兩房高樓自售"
+        },
+        {
+          "match": {"floor": 12, "area": 33.87, "area_tol": 0.2},
+          "cheap": 1220,
+          "fair": 1300,
+          "par": 1360,
+          "note": "兩房含車"
+        },
+        {
+          "match": {"floor": 23, "area": 44.04, "area_tol": 0.2},
+          "cheap": 1760,
+          "fair": 1860,
+          "par": 1940,
+          "note": "三房次頂樓"
+        },
+        {
+          "match": {"floor": 4, "area": 47.18, "area_tol": 0.2},
+          "cheap": 1720,
+          "fair": 1840,
+          "par": 1920,
+          "note": "大三房低樓"
+        },
+        {
+          "match": {"floor": 15, "area": 60.31, "area_tol": 0.2},
+          "cheap": 2480,
+          "fair": 2680,
+          "par": 2820,
+          "note": "四房"
+        },
+        {
+          "match": {"floor": 22, "area": 67.79, "area_tol": 0.2},
+          "cheap": 2520,
+          "fair": 2720,
+          "par": 2860,
+          "note": "大四房雙平車"
+        }
+      ],
+      "bands": [
+        {
+          "id": "compact",
+          "min_area": 20,
+          "max_area": 28,
+          "cheap_ping": 40.5,
+          "fair_ping": 43.0,
+          "par_ping": 45.5
+        },
+        {
+          "id": "small_2br",
+          "min_area": 28,
+          "max_area": 38,
+          "cheap_ping": 36.0,
+          "fair_ping": 38.5,
+          "par_ping": 40.5
+        },
+        {
+          "id": "mid_3br",
+          "min_area": 38,
+          "max_area": 52,
+          "cheap_ping": 39.0,
+          "fair_ping": 41.5,
+          "par_ping": 43.5
+        },
+        {
+          "id": "large_4br",
+          "min_area": 52,
+          "max_area": 80,
+          "cheap_ping": 41.0,
+          "fair_ping": 44.5,
+          "par_ping": 47.0
         }
       ]
     }

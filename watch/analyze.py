@@ -58,18 +58,29 @@ def parse_floor(value: Any) -> tuple[int | None, int | None, str]:
 
 
 def parse_rooms(room: Any, title: str = "") -> tuple[int, str]:
-    text = f"{room or ''} {title or ''}"
-    match = re.search(r"(\d)\s*房", text)
-    rooms = int(match.group(1)) if match else 0
-    if re.search(r"2\s*\+\s*1|2加1|可隔三房", text):
+    room_text = str(room or "")
+    title_text = str(title or "")
+    combo = f"{room_text} {title_text}"
+    room_match = re.search(r"(\d)\s*房", room_text)
+    rooms = int(room_match.group(1)) if room_match else 0
+    if re.search(r"2\s*\+\s*1|2加1|可隔三房", combo):
         return 2, "2+1房"
+    if rooms == 0:
+        if re.search(r"四房", title_text):
+            rooms = 4
+        elif re.search(r"三房", title_text):
+            rooms = 3
+        elif re.search(r"兩房|2房", title_text):
+            rooms = 2
+    elif rooms == 1 and re.search(r"兩房|2房", title_text):
+        rooms = 2
     if rooms >= 3:
         return rooms, f"{rooms}房"
     if rooms == 2:
         return 2, "2房"
     if rooms == 1:
         return 1, "1房"
-    return rooms, (str(room).strip() if room else "格局未標")
+    return rooms, (room_text.strip() if room_text.strip() else "格局未標")
 
 
 def sane_original(ask: int | None, original: int | None) -> int | None:
@@ -231,10 +242,11 @@ def unit_id(unit: dict[str, Any]) -> str:
 
 
 def attach_history(units: list[dict[str, Any]], previous: dict[str, Any] | None) -> list[dict[str, Any]]:
-    prev_units = {item["uid"]: item for item in (previous or {}).get("units") or []}
+    from history import match_previous
+
     enriched = []
     for unit in units:
-        prev = prev_units.get(unit["uid"])
+        prev = match_previous(unit, previous)
         prev_ask = prev.get("ask") if prev else None
         dropped = 0
         drop_notes: list[str] = []
