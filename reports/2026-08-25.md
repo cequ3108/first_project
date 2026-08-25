@@ -1,6 +1,6 @@
 # 遠雄北府苑、西門大院、遠雄新源邸、國泰文海硯、國泰磐耘、允將海安、國泰文林硯、藏美表參道、遠雄頂美、富立真邦、富立和築 每日盯盤
 
-- 產出時間（台灣）：**2026-08-25 11:16**
+- 產出時間（台灣）：**2026-08-25 17:00**
 - 社區數：**11**
 
 ## 一、有沒有掉入合理價
@@ -16,19 +16,19 @@
 原本就在合理價內：
 
 - **9F/20F／2房／29.87坪** 開價 **1280萬**，合理價 1280萬，平價 1330萬（1+1／兩房含車）　[20320231](https://sale.591.com.tw/home/house/detail/2/20320231.html)
-- **20F/20F／2房／38.74坪** 開價 **1530萬**，合理價 1580萬，平價 1660萬（頂樓兩房平轉，低於113年同社區成交帶）　[20546471](https://sale.591.com.tw/home/house/detail/2/20546471.html)
+- **20F/20F／2房／38.74坪** 開價 **1530萬**，合理價 1580萬，平價 1660萬（頂樓兩房平轉，低於113年同社區成交帶）　[20546471](https://sale.591.com.tw/home/house/detail/2/20546471.html)、[24828825](https://sale.591.com.tw/home/house/detail/2/24828825.html)
 
 ### 遠雄頂美
 
 原本就在合理價內：
 
-- **15F/22F／3房／47.20坪** 開價 **1738萬**，合理價 1740萬，平價 1810萬（三房含車，對115-05 10F 54坪1815）　[20474257](https://sale.591.com.tw/home/house/detail/2/20474257.html)、[20485939](https://sale.591.com.tw/home/house/detail/2/20485939.html)、[20486195](https://sale.591.com.tw/home/house/detail/2/20486195.html)、[24880489](https://sale.591.com.tw/home/house/detail/2/24880489.html)
+- **15F/22F／3房／47.20坪** 開價 **1738萬**，合理價 1740萬，平價 1810萬（三房含車，對115-05 10F 54坪1815）　[20474257](https://sale.591.com.tw/home/house/detail/2/20474257.html)、[20485939](https://sale.591.com.tw/home/house/detail/2/20485939.html)、[20486195](https://sale.591.com.tw/home/house/detail/2/20486195.html)、[24880954](https://sale.591.com.tw/home/house/detail/2/24880954.html)
 
 ### 富立真邦
 
 原本就在合理價內：
 
-- **13F/15F／3房／67.94坪** 開價 **3268萬**，合理價 3300萬，平價 3440萬（高樓三房大車位，對114-08 12F 67坪3600）　[20604032](https://sale.591.com.tw/home/house/detail/2/20604032.html)、[20647076](https://sale.591.com.tw/home/house/detail/2/20647076.html)、[20696419](https://sale.591.com.tw/home/house/detail/2/20696419.html)、[20718945](https://sale.591.com.tw/home/house/detail/2/20718945.html)、[20788766](https://sale.591.com.tw/home/house/detail/2/20788766.html)
+- **13F/15F／3房／67.94坪** 開價 **3268萬**，合理價 3300萬，平價 3440萬（高樓三房大車位，對114-08 12F 67坪3600）　[20604032](https://sale.591.com.tw/home/house/detail/2/20604032.html)、[20647076](https://sale.591.com.tw/home/house/detail/2/20647076.html)、[20696419](https://sale.591.com.tw/home/house/detail/2/20696419.html)、[20718945](https://sale.591.com.tw/home/house/detail/2/20718945.html)、[20788766](https://sale.591.com.tw/home/house/detail/2/20788766.html)、[24947382](https://sale.591.com.tw/home/house/detail/2/24947382.html)
 
 ### 富立和築
 
@@ -70,7 +70,7 @@
 
 ## 四、西門大院｜開價／便宜價／合理價／平價
 
-西門大院：在售 11 則，去重後 **7** 戶。2 房與 3 房同一張表。
+西門大院：在售 10 則，去重後 **7** 戶。2 房與 3 房同一張表。
 來源：[https://market.591.com.tw/3681545/sale](https://market.591.com.tw/3681545/sale)
 
 | 戶 | 格局 | 樓層 | 坪數 | 開價 | 便宜價 | 合理價 | 平價 | 超出合理 | 降價 |
