@@ -486,5 +486,74 @@ class FuliHezhuTests(unittest.TestCase):
         self.assertTrue(valued["in_fair"])
 
 
+class DingchaoTests(unittest.TestCase):
+    def test_low_floor_four_bed_in_fair(self):
+        community = load_config()["communities"][11]
+        self.assertEqual(community["id"], "dingchao")
+        valued = apply_valuation(
+            {
+                "floor": 4,
+                "area": 117.4,
+                "ask": 4980,
+                "layout": "4房",
+                "house_id": "20840015",
+                "url": "https://example.com",
+            },
+            community,
+        )
+        self.assertEqual(valued["cheap"], 4680)
+        self.assertEqual(valued["fair"], 5100)
+        self.assertEqual(valued["par"], 5460)
+        self.assertTrue(valued["in_fair"])
+
+    def test_high_floor_decorated_over_fair(self):
+        community = load_config()["communities"][11]
+        valued = apply_valuation(
+            {
+                "floor": 22,
+                "area": 123.27,
+                "ask": 8268,
+                "layout": "3房",
+                "house_id": "20823745",
+                "url": "https://example.com",
+            },
+            community,
+        )
+        self.assertEqual(valued["fair"], 6200)
+        self.assertFalse(valued["in_fair"])
+        self.assertGreater(valued["over_fair"], 2000)
+
+    def test_floor_band_splits_same_area(self):
+        community = load_config()["communities"][11]
+        low = apply_valuation(
+            {
+                "floor": 5,
+                "area": 120.0,
+                "ask": 5000,
+                "layout": "3房",
+                "house_id": "low",
+                "url": "https://example.com",
+            },
+            community,
+        )
+        high = apply_valuation(
+            {
+                "floor": 35,
+                "area": 120.0,
+                "ask": 7500,
+                "layout": "3房",
+                "house_id": "high",
+                "url": "https://example.com",
+            },
+            community,
+        )
+        self.assertEqual(low["value_source"], "band")
+        self.assertEqual(high["value_source"], "band")
+        self.assertEqual(low["fair"], 5220)
+        self.assertEqual(high["fair"], 6840)
+        self.assertTrue(low["in_fair"])
+        self.assertFalse(high["in_fair"])
+
+
 if __name__ == "__main__":
     unittest.main()

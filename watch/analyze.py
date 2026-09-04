@@ -216,9 +216,17 @@ def match_override(unit: dict[str, Any], overrides: list[dict[str, Any]]) -> dic
 
 def match_band(unit: dict[str, Any], bands: list[dict[str, Any]]) -> dict[str, Any] | None:
     area = float(unit["area"])
+    floor = unit.get("floor")
     for band in bands:
-        if float(band["min_area"]) <= area < float(band["max_area"]):
-            return band
+        if not (float(band["min_area"]) <= area < float(band["max_area"])):
+            continue
+        min_floor = band.get("min_floor")
+        max_floor = band.get("max_floor")
+        if min_floor is not None and (floor is None or int(floor) < int(min_floor)):
+            continue
+        if max_floor is not None and (floor is None or int(floor) >= int(max_floor)):
+            continue
+        return band
     return None
 
 
