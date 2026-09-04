@@ -33,63 +33,106 @@ def format_unit_line(unit: dict[str, Any], community_name: str = "") -> str:
     prefix = f"**{community_name}**　" if community_name else ""
     return (
         f"- {prefix}**{unit['floor_label']}／{unit['layout']}／{float(unit['area']):.2f}坪** "
-        f"開價 **{wan(unit['ask'])}萬**，合理價 {wan(unit['fair'])}萬，平價 {wan(unit['par'])}萬"
+        f"開價 **{wan(unit['ask'])}萬**，便宜價 {wan(unit.get('cheap'))}萬，合理價 {wan(unit['fair'])}萬，平價 {wan(unit['par'])}萬"
         f"{extra}　{unit_link(unit)}"
     )
 
 
-def _fair_units(community: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:
+def _price_groups(community: dict[str, Any], flag: str) -> dict[str, list[dict[str, Any]]]:
     units = community.get("units") or []
+    entered_key = f"entered_{flag}"
+    new_key = f"new_in_{flag}"
+    already_key = f"already_{flag}"
+    in_key = f"in_{flag}"
     return {
-        "entered": [u for u in units if u.get("entered_fair")],
-        "new_in": [u for u in units if u.get("new_in_fair")],
-        "already": [u for u in units if u.get("already_fair")],
-        "in_fair": [u for u in units if u.get("in_fair")],
-        "dropped": [u for u in units if u.get("drop_amount")],
+        "entered": [u for u in units if u.get(entered_key)],
+        "new_in": [u for u in units if u.get(new_key)],
+        "already": [u for u in units if u.get(already_key)],
+        "in_band": [u for u in units if u.get(in_key)],
     }
 
 
-def fair_section(communities: list[dict[str, Any]]) -> str:
-    lines = ["## 一、有沒有掉入合理價", ""]
-    any_fair = False
+def _band_section(
+    communities: list[dict[str, Any]],
+    title: str,
+    short: str,
+    flag: str,
+    empty_line: str,
+    skip_if: str | None = None,
+) -> str:
+    labels = {
+        "entered": f"今日新掉入{short}：",
+        "new_in": f"新出現且已在{short}內：",
+        "already": f"原本就在{short}內：",
+    }
+    lines = [f"## {title}", ""]
+    any_hit = False
     for community in communities:
-        groups = _fair_units(community)
-        if not groups["in_fair"]:
+        groups = _price_groups(community, flag)
+        shown = groups["in_band"]
+        if skip_if:
+            shown = [u for u in shown if not u.get(skip_if)]
+            groups = {
+                key: [u for u in value if not u.get(skip_if)]
+                for key, value in groups.items()
+            }
+        if not shown:
             continue
-        any_fair = True
+        any_hit = True
         lines.append(f"### {community['name']}")
         lines.append("")
         if groups["entered"]:
-            lines.append("今日新掉入合理價：")
+            lines.append(labels["entered"])
             lines.append("")
             lines.extend(format_unit_line(u) for u in groups["entered"])
             lines.append("")
         if groups["new_in"]:
-            lines.append("新出現且已在合理價內：")
+            lines.append(labels["new_in"])
             lines.append("")
             lines.extend(format_unit_line(u) for u in groups["new_in"])
             lines.append("")
         if groups["already"]:
-            lines.append("原本就在合理價內：")
+            lines.append(labels["already"])
             lines.append("")
             lines.extend(format_unit_line(u) for u in groups["already"])
             lines.append("")
         leftover = [
             u
-            for u in groups["in_fair"]
+            for u in shown
             if u not in groups["entered"] and u not in groups["new_in"] and u not in groups["already"]
         ]
         if leftover:
             lines.extend(format_unit_line(u) for u in leftover)
             lines.append("")
-    if not any_fair:
-        lines.append("今日**沒有**物件開價掉到合理價（開價仍高於合理價）。")
+    if not any_hit:
+        lines.append(empty_line)
         lines.append("")
     return "\n".join(lines)
 
 
+def cheap_section(communities: list[dict[str, Any]]) -> str:
+    return _band_section(
+        communities,
+        "一、有沒有掉入便宜價",
+        "便宜價",
+        "cheap",
+        "今日**沒有**物件開價掉到便宜價。",
+    )
+
+
+def fair_section(communities: list[dict[str, Any]]) -> str:
+    return _band_section(
+        communities,
+        "二、有沒有掉入合理價",
+        "合理價",
+        "fair",
+        "今日**沒有**物件開價掉到合理價（開價仍高於合理價）。",
+        skip_if="in_cheap",
+    )
+
+
 def drop_section(communities: list[dict[str, Any]]) -> str:
-    lines = ["## 二、今日降價", ""]
+    lines = ["## 三、今日降價", ""]
     any_drop = False
     for community in communities:
         dropped = [u for u in community.get("units") or [] if u.get("drop_amount")]
@@ -149,10 +192,10 @@ def footnote() -> str:
         [
             "## 說明",
             "",
-            "- **便宜價**：買方優勢價，要有讓價空間才談得下來。",
-            "- **合理價**：依近期實價回推，開價掉到這條線以下才值得認真看。",
+            "- **便宜價**：買方優勢價，要有讓價空間才談得下來。第一區塊看「開價 ≤ 便宜價」。",
+            "- **合理價**：依近期實價回推；豪宅再加折價後的裝潢。第二區塊看「開價 ≤ 合理價」（已列在便宜價的不再重複）。",
             "- **平價**：接近市場成交的持平價；再高就偏貴。",
-            "- 第一區塊只看「開價 ≤ 合理價」。這不是成交保證，也不是自動出價。",
+            "- 這不是成交保證，也不是自動出價。",
             "- 每日開價寫在 `data/daily/` 與 `data/price-history.json`，用來比對有沒有降價。",
             "- 同一戶多個房仲刊登會合併，連結保留前幾則供核對。",
             "- 已成交的戶會從表上拿掉，同戶其他刊登也不再列入。",
@@ -166,7 +209,7 @@ def footnote() -> str:
             "- 遠雄頂美約 3 年、中西區中華西路。近半年同社區成交約 36–37 萬／坪；15F 三房若開在 1730 附近已接近實價。",
             "- 富立真邦約 7 年、東區崇賢三路（南台南站重劃區）。近半年同社區成交約 46–48 萬／坪；低樓三房若開在 3060 附近、高樓大戶若開在 3300 附近可以認真看。",
             "- 富立和築約 8 年，與真邦同帶、戶數較多。近一年同社區成交約 39–42 萬／坪；6F 三房若開在 2140 附近已接近實價。",
-            "- 國城定潮約 4 年、高雄前鎮亞灣（中華五路）。近一年實價約 51–54 萬／坪，高樓可到 61 萬、低樓明顯較低。合理價依樓層與近期成交回推，精裝溢價不計入。",
+            "- 國城定潮約 4 年、高雄前鎮亞灣。近一年實價約 51–54 萬／坪。4000 萬以上豪宅：合理價＝同條件實價底＋裝潢重置成本打折（便宜價約 2.5 折、合理價約 4 折、平價約 5.5 折）；毛胚不加裝潢，不採賣方「千萬精裝」原價。",
             "",
         ]
     )
@@ -182,8 +225,8 @@ def render_report(result: dict[str, Any], generated_at: str) -> str:
         f"- 社區數：**{len(communities)}**",
         "",
     ]
-    parts = ["\n".join(header), fair_section(communities), drop_section(communities)]
-    for index, community in enumerate(communities, start=3):
+    parts = ["\n".join(header), cheap_section(communities), fair_section(communities), drop_section(communities)]
+    for index, community in enumerate(communities, start=4):
         parts.append(table_section(community, f"## { _cjk_index(index) }、{community['name']}｜開價／便宜價／合理價／平價"))
     parts.append(footnote())
     return "\n".join(parts).rstrip() + "\n"
@@ -206,5 +249,6 @@ def _cjk_index(number: int) -> str:
         13: "十三",
         14: "十四",
         15: "十五",
+        16: "十六",
     }
     return mapping.get(number, str(number))

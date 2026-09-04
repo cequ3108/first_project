@@ -230,17 +230,47 @@ def match_band(unit: dict[str, Any], bands: list[dict[str, Any]]) -> dict[str, A
     return None
 
 
+def _num(source: dict[str, Any], key: str, default: float | None = None) -> float | None:
+    if source.get(key) is None:
+        return default
+    return float(source[key])
+
+
+def override_prices(override: dict[str, Any], community: dict[str, Any]) -> tuple[int, int, int, float]:
+    """實價底價＋豪宅裝潢折價。沒寫 base_* 就用 cheap/fair/par。"""
+    decor = float(override.get("decor") or 0)
+    cheap_rate = _num(override, "decor_cheap_rate", _num(community, "decor_cheap_rate", 0.25)) or 0.25
+    fair_rate = _num(override, "decor_fair_rate", _num(community, "decor_fair_rate", 0.40)) or 0.40
+    par_rate = _num(override, "decor_par_rate", _num(community, "decor_par_rate", 0.55)) or 0.55
+    if override.get("base_cheap") is not None:
+        cheap = int(round(float(override["base_cheap"]) + decor * cheap_rate))
+        fair = int(round(float(override["base_fair"]) + decor * fair_rate))
+        par = int(round(float(override["base_par"]) + decor * par_rate))
+        return cheap, fair, par, decor
+    cheap = int(override["cheap"])
+    fair = int(override["fair"])
+    par = int(override["par"])
+    if decor:
+        cheap = int(round(cheap + decor * cheap_rate))
+        fair = int(round(fair + decor * fair_rate))
+        par = int(round(par + decor * par_rate))
+    return cheap, fair, par, decor
+
+
 def apply_valuation(unit: dict[str, Any], community: dict[str, Any]) -> dict[str, Any]:
     valued = dict(unit)
     override = match_override(unit, community.get("overrides") or [])
     if override:
-        valued["cheap"] = int(override["cheap"])
-        valued["fair"] = int(override["fair"])
-        valued["par"] = int(override["par"])
+        cheap, fair, par, decor = override_prices(override, community)
+        valued["cheap"] = cheap
+        valued["fair"] = fair
+        valued["par"] = par
+        valued["decor"] = decor or None
         valued["value_note"] = override.get("note") or "指定估價"
         valued["value_source"] = "override"
     else:
         band = match_band(unit, community.get("bands") or [])
+        valued["decor"] = None
         if not band:
             valued["cheap"] = valued["fair"] = valued["par"] = None
             valued["value_note"] = "尚無估價帶，需人工補"
@@ -252,11 +282,14 @@ def apply_valuation(unit: dict[str, Any], community: dict[str, Any]) -> dict[str
             valued["par"] = int(round(area * float(band["par_ping"])))
             valued["value_note"] = f"帶狀估價（{band['id']}）"
             valued["value_source"] = "band"
+    cheap = valued.get("cheap")
     fair = valued.get("fair")
     par = valued.get("par")
     ask = valued["ask"]
+    valued["over_cheap"] = None if cheap is None else ask - cheap
     valued["over_fair"] = None if fair is None else ask - fair
     valued["over_par"] = None if par is None else ask - par
+    valued["in_cheap"] = cheap is not None and ask <= cheap
     valued["in_fair"] = fair is not None and ask <= fair
     valued["in_par"] = par is not None and ask <= par
     valued["uid"] = unit_id(valued)
@@ -290,6 +323,13 @@ def attach_history(units: list[dict[str, Any]], previous: dict[str, Any] | None)
             and (prev_ask is None or (unit.get("fair") is not None and prev_ask > unit["fair"]))
         )
         already_fair = bool(unit.get("in_fair") and prev_ask is not None and unit.get("fair") is not None and prev_ask <= unit["fair"])
+        entered_cheap = bool(
+            unit.get("in_cheap")
+            and (prev_ask is None or (unit.get("cheap") is not None and prev_ask > unit["cheap"]))
+        )
+        already_cheap = bool(
+            unit.get("in_cheap") and prev_ask is not None and unit.get("cheap") is not None and prev_ask <= unit["cheap"]
+        )
         copied = dict(unit)
         copied["prev_ask"] = prev_ask
         copied["drop_amount"] = dropped or None
@@ -297,6 +337,9 @@ def attach_history(units: list[dict[str, Any]], previous: dict[str, Any] | None)
         copied["entered_fair"] = entered_fair and prev is not None
         copied["new_in_fair"] = entered_fair and prev is None
         copied["already_fair"] = already_fair
+        copied["entered_cheap"] = entered_cheap and prev is not None
+        copied["new_in_cheap"] = entered_cheap and prev is None
+        copied["already_cheap"] = already_cheap
         copied["is_new"] = prev is None
         enriched.append(copied)
     return enriched

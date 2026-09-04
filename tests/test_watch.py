@@ -123,7 +123,8 @@ class ReportTests(unittest.TestCase):
         analyzed = analyze_community(load_fixture(), community, previous)
         result = {"communities": [analyzed], "generated_at": "2026-08-24 17:00"}
         markdown = render_report(result, "2026-08-24 17:00")
-        self.assertIn("一、有沒有掉入合理價", markdown)
+        self.assertIn("一、有沒有掉入便宜價", markdown)
+        self.assertIn("二、有沒有掉入合理價", markdown)
         self.assertIn("今日新掉入合理價", markdown)
         self.assertIn("開價／便宜價／合理價／平價", markdown)
         self.assertIn("便宜價", markdown)
@@ -501,10 +502,12 @@ class DingchaoTests(unittest.TestCase):
             },
             community,
         )
-        self.assertEqual(valued["cheap"], 4680)
-        self.assertEqual(valued["fair"], 5100)
-        self.assertEqual(valued["par"], 5460)
+        self.assertEqual(valued["cheap"], 4930)
+        self.assertEqual(valued["fair"], 5500)
+        self.assertEqual(valued["par"], 6010)
+        self.assertEqual(valued["decor"], 1000)
         self.assertTrue(valued["in_fair"])
+        self.assertFalse(valued["in_cheap"])
 
     def test_high_floor_decorated_over_fair(self):
         community = load_config()["communities"][11]
@@ -519,9 +522,30 @@ class DingchaoTests(unittest.TestCase):
             },
             community,
         )
-        self.assertEqual(valued["fair"], 6200)
+        self.assertEqual(valued["cheap"], 5830)
+        self.assertEqual(valued["fair"], 6600)
+        self.assertEqual(valued["par"], 7550)
         self.assertFalse(valued["in_fair"])
-        self.assertGreater(valued["over_fair"], 2000)
+        self.assertGreater(valued["over_fair"], 1600)
+
+    def test_shell_unit_skips_decor(self):
+        community = load_config()["communities"][11]
+        valued = apply_valuation(
+            {
+                "floor": 17,
+                "area": 133.04,
+                "ask": 6680,
+                "layout": "開放式格局",
+                "house_id": "25008856",
+                "url": "https://example.com",
+            },
+            community,
+        )
+        self.assertIsNone(valued["decor"])
+        self.assertEqual(valued["cheap"], 6380)
+        self.assertEqual(valued["fair"], 6780)
+        self.assertTrue(valued["in_fair"])
+        self.assertFalse(valued["in_cheap"])
 
     def test_floor_band_splits_same_area(self):
         community = load_config()["communities"][11]
