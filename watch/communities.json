@@ -670,6 +670,93 @@
           "par_ping": 40.5
         }
       ]
+    },
+    {
+      "id": "dingchao",
+      "name": "國城定潮",
+      "market_id": 101826,
+      "sale_url": "https://market.591.com.tw/101826/sale",
+      "decor_cheap_rate": 0.25,
+      "decor_fair_rate": 0.4,
+      "decor_par_rate": 0.55,
+      "overrides": [
+        {
+          "match": {"floor": 4, "area": 117.4, "area_tol": 0.3},
+          "base_cheap": 4680,
+          "base_fair": 5100,
+          "base_par": 5460,
+          "decor": 1000,
+          "note": "實價底對3F無車3968／14F 4810；千萬精裝打2.5／4／5.5折"
+        },
+        {
+          "match": {"floor": 6, "area": 111.02, "area_tol": 0.3},
+          "cheap": 4440,
+          "fair": 4830,
+          "par": 5160,
+          "note": "低樓開放格局／毛胚，不加裝潢"
+        },
+        {
+          "match": {"floor": 10, "area": 103.4, "area_tol": 0.8},
+          "cheap": 4740,
+          "fair": 5150,
+          "par": 5560,
+          "note": "中低樓含平車，對115-07 18F 118坪5088（扣車約45萬／坪）"
+        },
+        {
+          "match": {"floor": 16, "area": 121.65, "area_tol": 0.3},
+          "cheap": 5800,
+          "fair": 6380,
+          "par": 6800,
+          "note": "中樓三連號大平車，對115-06 27F 126坪6350"
+        },
+        {
+          "match": {"floor": 17, "area": 133.04, "area_tol": 0.3},
+          "cheap": 6380,
+          "fair": 6780,
+          "par": 7180,
+          "note": "中高樓雙連號平車毛胚，不加裝潢；對115-01 17F 112坪6138"
+        },
+        {
+          "match": {"floor": 22, "area": 123.26, "area_tol": 0.3},
+          "base_cheap": 5580,
+          "base_fair": 6200,
+          "base_par": 7000,
+          "decor": 1000,
+          "note": "實價底對115-05同坪20F 5580；千萬精裝打2.5／4／5.5折"
+        }
+      ],
+      "bands": [
+        {
+          "id": "low",
+          "min_area": 90,
+          "max_area": 200,
+          "min_floor": 1,
+          "max_floor": 9,
+          "cheap_ping": 40.0,
+          "fair_ping": 43.5,
+          "par_ping": 46.5
+        },
+        {
+          "id": "mid",
+          "min_area": 90,
+          "max_area": 200,
+          "min_floor": 9,
+          "max_floor": 21,
+          "cheap_ping": 46.0,
+          "fair_ping": 50.0,
+          "par_ping": 54.0
+        },
+        {
+          "id": "high",
+          "min_area": 90,
+          "max_area": 200,
+          "min_floor": 21,
+          "max_floor": 50,
+          "cheap_ping": 52.0,
+          "fair_ping": 57.0,
+          "par_ping": 62.0
+        }
+      ]
     }
   ]
 }

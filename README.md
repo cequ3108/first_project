@@ -13,6 +13,7 @@
 - [遠雄頂美](https://market.591.com.tw/101914/sale)
 - [富立真邦](https://market.591.com.tw/39226/sale)
 - [富立和築](https://market.591.com.tw/39225/sale)
+- [國城定潮](https://market.591.com.tw/101826/sale)
 
 合併同一戶的重複刊登，算出開價、便宜價、合理價、平價，並把當天開價寫進 GitHub，隔天才能對出「有沒有降價」。
 
