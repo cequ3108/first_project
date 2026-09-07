@@ -1,6 +1,6 @@
 # 遠雄北府苑、西門大院、遠雄新源邸、國泰文海硯、國泰磐耘、允將海安、國泰文林硯、藏美表參道、遠雄頂美、富立真邦、富立和築、國城定潮 每日盯盤
 
-- 產出時間（台灣）：**2026-09-07 17:00**
+- 產出時間（台灣）：**2026-09-07 17:06**
 - 社區數：**12**
 
 ## 一、有沒有掉入便宜價
@@ -37,7 +37,7 @@
 原本就在合理價內：
 
 - **6F/15F／3房／55.65坪** 開價 **2100萬**，便宜價 1980萬，合理價 2140萬，平價 2260萬（中低樓三房平車，對115-01 7F 46坪1990與114-12 8F 51坪2200）　[20605562](https://sale.591.com.tw/home/house/detail/2/20605562.html)
-- **15F/15F／3房／56.55坪** 開價 **2498萬**，便宜價 2320萬，合理價 2520萬，平價 2650萬（頂樓朝南三房平車，對中樓實價往上加）　[20524895](https://sale.591.com.tw/home/house/detail/2/20524895.html)、[20527823](https://sale.591.com.tw/home/house/detail/2/20527823.html)、[20554559](https://sale.591.com.tw/home/house/detail/2/20554559.html)、[20607592](https://sale.591.com.tw/home/house/detail/2/20607592.html)、[25025909](https://sale.591.com.tw/home/house/detail/2/25025909.html)、[20592674](https://sale.591.com.tw/home/house/detail/2/20592674.html)
+- **15F/15F／3房／56.55坪** 開價 **2498萬**，便宜價 2320萬，合理價 2520萬，平價 2650萬（頂樓朝南三房平車，對中樓實價往上加）　[20524895](https://sale.591.com.tw/home/house/detail/2/20524895.html)、[20527823](https://sale.591.com.tw/home/house/detail/2/20527823.html)、[20554559](https://sale.591.com.tw/home/house/detail/2/20554559.html)、[20607592](https://sale.591.com.tw/home/house/detail/2/20607592.html)、[20592674](https://sale.591.com.tw/home/house/detail/2/20592674.html)、[20634477](https://sale.591.com.tw/home/house/detail/2/20634477.html)
 
 ### 國城定潮
 
@@ -45,7 +45,7 @@
 
 - **10F/41F／開放式格局／103.06坪** 開價 **5088萬**，便宜價 4740萬，合理價 5150萬，平價 5560萬（中低樓含平車，對115-07 18F 118坪5088（扣車約45萬／坪））　[20409342](https://sale.591.com.tw/home/house/detail/2/20409342.html)、[20539580](https://sale.591.com.tw/home/house/detail/2/20539580.html)、[20570608](https://sale.591.com.tw/home/house/detail/2/20570608.html)、[20639241](https://sale.591.com.tw/home/house/detail/2/20639241.html)、[20788297](https://sale.591.com.tw/home/house/detail/2/20788297.html)
 - **16F/41F／1房／121.65坪** 開價 **6380萬**，便宜價 5800萬，合理價 6380萬，平價 6800萬（中樓三連號大平車，對115-06 27F 126坪6350）　[20661904](https://sale.591.com.tw/home/house/detail/2/20661904.html)
-- **17F/41F／開放式格局／133.04坪** 開價 **6680萬**，便宜價 6380萬，合理價 6780萬，平價 7180萬（中高樓雙連號平車毛胚，不加裝潢；對115-01 17F 112坪6138）　[20627846](https://sale.591.com.tw/home/house/detail/2/20627846.html)、[20673980](https://sale.591.com.tw/home/house/detail/2/20673980.html)、[20701919](https://sale.591.com.tw/home/house/detail/2/20701919.html)、[20823350](https://sale.591.com.tw/home/house/detail/2/20823350.html)、[25033510](https://sale.591.com.tw/home/house/detail/2/25033510.html)、[20699314](https://sale.591.com.tw/home/house/detail/2/20699314.html)
+- **17F/41F／開放式格局／133.04坪** 開價 **6680萬**，便宜價 6380萬，合理價 6780萬，平價 7180萬（中高樓雙連號平車毛胚，不加裝潢；對115-01 17F 112坪6138）　[20627846](https://sale.591.com.tw/home/house/detail/2/20627846.html)、[20673980](https://sale.591.com.tw/home/house/detail/2/20673980.html)、[20701919](https://sale.591.com.tw/home/house/detail/2/20701919.html)、[20823350](https://sale.591.com.tw/home/house/detail/2/20823350.html)、[20699314](https://sale.591.com.tw/home/house/detail/2/20699314.html)
 
 ## 三、今日降價
 
@@ -56,7 +56,7 @@
 ### 國城定潮
 
 - **4F/41F／4房／117.40坪** 開價 **4580萬**　591已降400萬（4980→4580）　[20530100](https://sale.591.com.tw/home/house/detail/2/20530100.html)、[20538565](https://sale.591.com.tw/home/house/detail/2/20538565.html)、[20703048](https://sale.591.com.tw/home/house/detail/2/20703048.html)、[20685468](https://sale.591.com.tw/home/house/detail/2/20685468.html)、[20716059](https://sale.591.com.tw/home/house/detail/2/20716059.html)、[20803319](https://sale.591.com.tw/home/house/detail/2/20803319.html)
-- **17F/41F／開放式格局／133.04坪** 開價 **6680萬**　591已降200萬（6880→6680）　[20627846](https://sale.591.com.tw/home/house/detail/2/20627846.html)、[20673980](https://sale.591.com.tw/home/house/detail/2/20673980.html)、[20701919](https://sale.591.com.tw/home/house/detail/2/20701919.html)、[20823350](https://sale.591.com.tw/home/house/detail/2/20823350.html)、[25033510](https://sale.591.com.tw/home/house/detail/2/25033510.html)、[20699314](https://sale.591.com.tw/home/house/detail/2/20699314.html)
+- **17F/41F／開放式格局／133.04坪** 開價 **6680萬**　591已降200萬（6880→6680）　[20627846](https://sale.591.com.tw/home/house/detail/2/20627846.html)、[20673980](https://sale.591.com.tw/home/house/detail/2/20673980.html)、[20701919](https://sale.591.com.tw/home/house/detail/2/20701919.html)、[20823350](https://sale.591.com.tw/home/house/detail/2/20823350.html)、[20699314](https://sale.591.com.tw/home/house/detail/2/20699314.html)
 
 ## 四、遠雄北府苑｜開價／便宜價／合理價／平價
 
@@ -217,7 +217,7 @@
 | 10F-103.06-開放式格局 | 開放式格局 | 10F/41F | 103.06 | 5088 | 4740 | 5150 | 5560 | -62 | 未見 |
 | 16F-121.65-1房 | 1房 | 16F/41F | 121.65 | 6380 | 5800 | 6380 | 6800 | 0 | 未見 |
 | 17F-133.04-開放式格局 | 開放式格局 | 17F/41F | 133.04 | 6680 | 6380 | 6780 | 7180 | -100 | 591已降200萬（6880→6680） |
-| 22F-123.27-3房 | 3房 | 22F/41F | 123.27 | 8268 | 5830 | 6600 | 7550 | +1668 | 未見 |
+| 22F-123.26-3房 | 3房 | 22F/41F | 123.26 | 8268 | 5830 | 6600 | 7550 | +1668 | 未見 |
 
 單位：萬、含車（若該則標含車位）。超出合理 = 開價 − 合理價。
 
