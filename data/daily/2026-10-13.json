@@ -1,0 +1,779 @@
+{
+  "generated_at": "2026-10-13 17:04",
+  "communities": [
+    {
+      "community_id": "beifu-yuan",
+      "name": "遠雄北府苑",
+      "ad_count": 40,
+      "unit_count": 7,
+      "units": [
+        {
+          "uid": "10F-34.84-2房",
+          "layout": "2房",
+          "floor_label": "10F/15F",
+          "area": 34.84,
+          "ask": 1498,
+          "cheap": 1320,
+          "fair": 1380,
+          "par": 1420,
+          "over_fair": 118,
+          "drop_note": "未見",
+          "house_ids": [
+            "20958603",
+            "21016425",
+            "21023496"
+          ]
+        },
+        {
+          "uid": "4F-42.48-3房",
+          "layout": "3房",
+          "floor_label": "4F/15F",
+          "area": 42.48,
+          "ask": 1998,
+          "cheap": 1720,
+          "fair": 1820,
+          "par": 1900,
+          "over_fair": 178,
+          "drop_note": "591已降70萬（2068→1998）",
+          "house_ids": [
+            "20555834",
+            "20736899",
+            "20739524",
+            "20755397",
+            "20818251",
+            "20831464",
+            "20831467",
+            "20835717",
+            "20859376",
+            "20867509",
+            "20872031",
+            "20874502",
+            "20887552",
+            "20998121",
+            "21004321",
+            "21012080",
+            "21034793",
+            "21060325",
+            "21064174",
+            "21067051",
+            "25280822"
+          ]
+        },
+        {
+          "uid": "10F-42.49-2+1房",
+          "layout": "2+1房",
+          "floor_label": "10F/15F",
+          "area": 42.49,
+          "ask": 2028,
+          "cheap": 1770,
+          "fair": 1870,
+          "par": 1960,
+          "over_fair": 158,
+          "drop_note": "未見",
+          "house_ids": [
+            "20660832"
+          ]
+        },
+        {
+          "uid": "2F-45.12-2+1房",
+          "layout": "2+1房",
+          "floor_label": "2F/14F",
+          "area": 45.12,
+          "ask": 2088,
+          "cheap": 1720,
+          "fair": 1820,
+          "par": 1900,
+          "over_fair": 268,
+          "drop_note": "未見",
+          "house_ids": [
+            "20540814",
+            "20759278",
+            "20799185",
+            "20927368",
+            "20999690",
+            "21061437"
+          ]
+        },
+        {
+          "uid": "6F-44.76-2+1房",
+          "layout": "2+1房",
+          "floor_label": "6F/15F",
+          "area": 44.76,
+          "ask": 2098,
+          "cheap": 1800,
+          "fair": 1880,
+          "par": 1960,
+          "over_fair": 218,
+          "drop_note": "未見",
+          "house_ids": [
+            "20112445",
+            "20750272",
+            "20766451",
+            "20908509",
+            "21059743"
+          ]
+        },
+        {
+          "uid": "3F-43.03-2房",
+          "layout": "2房",
+          "floor_label": "3F/15F",
+          "area": 43.03,
+          "ask": 2168,
+          "cheap": 1730,
+          "fair": 1820,
+          "par": 1900,
+          "over_fair": 348,
+          "drop_note": "未見",
+          "house_ids": [
+            "20867517",
+            "20871243"
+          ]
+        },
+        {
+          "uid": "9F-51.86-3房",
+          "layout": "3房",
+          "floor_label": "9F/15F",
+          "area": 51.86,
+          "ask": 2398,
+          "cheap": 2070,
+          "fair": 2180,
+          "par": 2280,
+          "over_fair": 218,
+          "drop_note": "591已降90萬（2488→2398）；較昨日降90萬（2488→2398）",
+          "house_ids": [
+            "20846362",
+            "20753553"
+          ]
+        }
+      ]
+    },
+    {
+      "community_id": "ximen-dayuan",
+      "name": "西門大院",
+      "ad_count": 2,
+      "unit_count": 2,
+      "units": [
+        {
+          "uid": "22F-39.60-3房",
+          "layout": "3房",
+          "floor_label": "22F/24F",
+          "area": 39.6,
+          "ask": 1888,
+          "cheap": 1544,
+          "fair": 1643,
+          "par": 1723,
+          "over_fair": 245,
+          "drop_note": "未見",
+          "house_ids": [
+            "21049843"
+          ]
+        },
+        {
+          "uid": "15F-60.31-4房",
+          "layout": "4房",
+          "floor_label": "15F/24F",
+          "area": 60.31,
+          "ask": 2988,
+          "cheap": 2480,
+          "fair": 2680,
+          "par": 2820,
+          "over_fair": 308,
+          "drop_note": "未見",
+          "house_ids": [
+            "20757692"
+          ]
+        }
+      ]
+    },
+    {
+      "community_id": "xinyuan-di",
+      "name": "遠雄新源邸",
+      "ad_count": 16,
+      "unit_count": 5,
+      "units": [
+        {
+          "uid": "6F-28.96-2房",
+          "layout": "2房",
+          "floor_label": "6F/24F",
+          "area": 28.96,
+          "ask": 1198,
+          "cheap": 1080,
+          "fair": 1160,
+          "par": 1200,
+          "over_fair": 38,
+          "drop_note": "未見",
+          "house_ids": [
+            "20854270",
+            "20870400",
+            "20932379",
+            "20979130",
+            "21046424",
+            "25255980"
+          ]
+        },
+        {
+          "uid": "3F-28.93-2房",
+          "layout": "2房",
+          "floor_label": "3F/24F",
+          "area": 28.93,
+          "ask": 1238,
+          "cheap": 1079,
+          "fair": 1157,
+          "par": 1201,
+          "over_fair": 81,
+          "drop_note": "591已降160萬（1398→1238）",
+          "house_ids": [
+            "20829306",
+            "20924924",
+            "21003792"
+          ]
+        },
+        {
+          "uid": "18F-39.05-2房",
+          "layout": "2房",
+          "floor_label": "18F/24F",
+          "area": 39.05,
+          "ask": 1650,
+          "cheap": 1425,
+          "fair": 1503,
+          "par": 1562,
+          "over_fair": 147,
+          "drop_note": "未見",
+          "house_ids": [
+            "20967279",
+            "20986591",
+            "20989307",
+            "21045830"
+          ]
+        },
+        {
+          "uid": "17F-49.77-2房",
+          "layout": "2房",
+          "floor_label": "17F/24F",
+          "area": 49.77,
+          "ask": 1988,
+          "cheap": 1820,
+          "fair": 1920,
+          "par": 1990,
+          "over_fair": 68,
+          "drop_note": "未見",
+          "house_ids": [
+            "20825964",
+            "21030251"
+          ]
+        },
+        {
+          "uid": "4F-49.72-3房",
+          "layout": "3房",
+          "floor_label": "4F/24F",
+          "area": 49.72,
+          "ask": 2188,
+          "cheap": 1780,
+          "fair": 1880,
+          "par": 1980,
+          "over_fair": 308,
+          "drop_note": "未見",
+          "house_ids": [
+            "20456984"
+          ]
+        }
+      ]
+    },
+    {
+      "community_id": "wenhaiyan",
+      "name": "國泰文海硯",
+      "ad_count": 9,
+      "unit_count": 1,
+      "units": [
+        {
+          "uid": "7F-76.15-3房",
+          "layout": "3房",
+          "floor_label": "7F/24F",
+          "area": 76.15,
+          "ask": 3488,
+          "cheap": 2780,
+          "fair": 3010,
+          "par": 3200,
+          "over_fair": 478,
+          "drop_note": "未見",
+          "house_ids": [
+            "20601792",
+            "20819251",
+            "20822095",
+            "20872942",
+            "20893208",
+            "20906817",
+            "20971680",
+            "21063650",
+            "25276962"
+          ]
+        }
+      ]
+    },
+    {
+      "community_id": "panyun",
+      "name": "國泰磐耘",
+      "ad_count": 0,
+      "unit_count": 0,
+      "units": []
+    },
+    {
+      "community_id": "yunjiang-haian",
+      "name": "允將海安",
+      "ad_count": 9,
+      "unit_count": 2,
+      "units": [
+        {
+          "uid": "4F-48.85-2+1房",
+          "layout": "2+1房",
+          "floor_label": "4F/24F",
+          "area": 48.85,
+          "ask": 1698,
+          "cheap": 1580,
+          "fair": 1660,
+          "par": 1720,
+          "over_fair": 38,
+          "drop_note": "未見",
+          "house_ids": [
+            "20763472",
+            "20777951",
+            "20864656",
+            "20887773",
+            "20935610",
+            "21023529",
+            "25229039"
+          ]
+        },
+        {
+          "uid": "22F-53.10-3房",
+          "layout": "3房",
+          "floor_label": "22F/24F",
+          "area": 53.1,
+          "ask": 2158,
+          "cheap": 1920,
+          "fair": 2040,
+          "par": 2140,
+          "over_fair": 118,
+          "drop_note": "未見",
+          "house_ids": [
+            "20763660",
+            "20792897"
+          ]
+        }
+      ]
+    },
+    {
+      "community_id": "wenlinyan",
+      "name": "國泰文林硯",
+      "ad_count": 3,
+      "unit_count": 1,
+      "units": [
+        {
+          "uid": "23F-68.94-3房",
+          "layout": "3房",
+          "floor_label": "23F/24F",
+          "area": 68.94,
+          "ask": 3680,
+          "cheap": 2900,
+          "fair": 3100,
+          "par": 3250,
+          "over_fair": 580,
+          "drop_note": "未見",
+          "house_ids": [
+            "20953293",
+            "20963151",
+            "20903405"
+          ]
+        }
+      ]
+    },
+    {
+      "community_id": "zangmei-omotesando",
+      "name": "藏美表參道",
+      "ad_count": 6,
+      "unit_count": 5,
+      "units": [
+        {
+          "uid": "9F-34.21-2房",
+          "layout": "2房",
+          "floor_label": "9F/20F",
+          "area": 34.21,
+          "ask": 1450,
+          "cheap": 1368,
+          "fair": 1454,
+          "par": 1522,
+          "over_fair": -4,
+          "drop_note": "未見",
+          "house_ids": [
+            "20908667"
+          ]
+        },
+        {
+          "uid": "20F-38.74-2房",
+          "layout": "2房",
+          "floor_label": "20F/20F",
+          "area": 38.74,
+          "ask": 1530,
+          "cheap": 1480,
+          "fair": 1580,
+          "par": 1660,
+          "over_fair": -50,
+          "drop_note": "未見",
+          "house_ids": [
+            "20908291"
+          ]
+        },
+        {
+          "uid": "6F-39.00-2房",
+          "layout": "2房",
+          "floor_label": "6F/20F",
+          "area": 39.0,
+          "ask": 1580,
+          "cheap": 1480,
+          "fair": 1560,
+          "par": 1640,
+          "over_fair": 20,
+          "drop_note": "未見",
+          "house_ids": [
+            "20960387",
+            "25152729"
+          ]
+        },
+        {
+          "uid": "20F-41.84-1房",
+          "layout": "1房",
+          "floor_label": "20F/20F",
+          "area": 41.84,
+          "ask": 2058,
+          "cheap": 1680,
+          "fair": 1800,
+          "par": 1900,
+          "over_fair": 258,
+          "drop_note": "未見",
+          "house_ids": [
+            "20580987"
+          ]
+        },
+        {
+          "uid": "2F-36.30-2+1房",
+          "layout": "2+1房",
+          "floor_label": "2F/20F",
+          "area": 36.3,
+          "ask": 2098,
+          "cheap": 1452,
+          "fair": 1543,
+          "par": 1615,
+          "over_fair": 555,
+          "drop_note": "591已降182萬（2280→2098）",
+          "house_ids": [
+            "20861174"
+          ]
+        }
+      ]
+    },
+    {
+      "community_id": "dingmei",
+      "name": "遠雄頂美",
+      "ad_count": 6,
+      "unit_count": 3,
+      "units": [
+        {
+          "uid": "7F-47.10-3房",
+          "layout": "3房",
+          "floor_label": "7F/22F",
+          "area": 47.1,
+          "ask": 1788,
+          "cheap": 1620,
+          "fair": 1720,
+          "par": 1780,
+          "over_fair": 68,
+          "drop_note": "未見",
+          "house_ids": [
+            "20992171"
+          ]
+        },
+        {
+          "uid": "18F-47.20-3房",
+          "layout": "3房",
+          "floor_label": "18F/22F",
+          "area": 47.2,
+          "ask": 1868,
+          "cheap": 1720,
+          "fair": 1820,
+          "par": 1900,
+          "over_fair": 48,
+          "drop_note": "未見",
+          "house_ids": [
+            "20992431",
+            "20733211"
+          ]
+        },
+        {
+          "uid": "22F-47.20-2房",
+          "layout": "2房",
+          "floor_label": "22F/22F",
+          "area": 47.2,
+          "ask": 2366,
+          "cheap": 1780,
+          "fair": 1900,
+          "par": 2020,
+          "over_fair": 466,
+          "drop_note": "未見",
+          "house_ids": [
+            "21058346",
+            "21061334",
+            "25274074"
+          ]
+        }
+      ]
+    },
+    {
+      "community_id": "fuli-zhenbang",
+      "name": "富立真邦",
+      "ad_count": 2,
+      "unit_count": 2,
+      "units": [
+        {
+          "uid": "3F-68.42-3房",
+          "layout": "3房",
+          "floor_label": "3F/15F",
+          "area": 68.42,
+          "ask": 3160,
+          "cheap": 2880,
+          "fair": 3060,
+          "par": 3180,
+          "over_fair": 100,
+          "drop_note": "較昨日降108萬（3268→3160）",
+          "house_ids": [
+            "20788766"
+          ]
+        },
+        {
+          "uid": "13F-67.94-3房",
+          "layout": "3房",
+          "floor_label": "13F/15F",
+          "area": 67.94,
+          "ask": 3268,
+          "cheap": 3120,
+          "fair": 3300,
+          "par": 3440,
+          "over_fair": -32,
+          "drop_note": "未見",
+          "house_ids": [
+            "20847565"
+          ]
+        }
+      ]
+    },
+    {
+      "community_id": "fuli-hezhu",
+      "name": "富立和築",
+      "ad_count": 14,
+      "unit_count": 4,
+      "units": [
+        {
+          "uid": "7F-40.88-2房",
+          "layout": "2房",
+          "floor_label": "7F/15F",
+          "area": 40.88,
+          "ask": 1850,
+          "cheap": 1540,
+          "fair": 1680,
+          "par": 1780,
+          "over_fair": 170,
+          "drop_note": "未見",
+          "house_ids": [
+            "20908930"
+          ]
+        },
+        {
+          "uid": "15F-55.08-3房",
+          "layout": "3房",
+          "floor_label": "15F/15F",
+          "area": 55.08,
+          "ask": 2500,
+          "cheap": 2320,
+          "fair": 2520,
+          "par": 2650,
+          "over_fair": -20,
+          "drop_note": "未見",
+          "house_ids": [
+            "20958567"
+          ]
+        },
+        {
+          "uid": "10F-56.53-3房",
+          "layout": "3房",
+          "floor_label": "10F/15F",
+          "area": 56.53,
+          "ask": 2580,
+          "cheap": 2240,
+          "fair": 2410,
+          "par": 2550,
+          "over_fair": 170,
+          "drop_note": "未見",
+          "house_ids": [
+            "20754506",
+            "20823318",
+            "20826910",
+            "20836985",
+            "20854341",
+            "20883580",
+            "20911659",
+            "20913588",
+            "20948795",
+            "21028616",
+            "25278542"
+          ]
+        },
+        {
+          "uid": "12F-56.63-2房",
+          "layout": "2房",
+          "floor_label": "12F/15F",
+          "area": 56.63,
+          "ask": 2585,
+          "cheap": 2095,
+          "fair": 2254,
+          "par": 2407,
+          "over_fair": 331,
+          "drop_note": "未見",
+          "house_ids": [
+            "21064937"
+          ]
+        }
+      ]
+    },
+    {
+      "community_id": "dingchao",
+      "name": "國城定潮",
+      "ad_count": 26,
+      "unit_count": 7,
+      "units": [
+        {
+          "uid": "4F-117.40-4房",
+          "layout": "4房",
+          "floor_label": "4F/41F",
+          "area": 117.4,
+          "ask": 4580,
+          "cheap": 4930,
+          "fair": 5500,
+          "par": 6010,
+          "over_fair": -920,
+          "drop_note": "591已降400萬（4980→4580）",
+          "house_ids": [
+            "20530100",
+            "20716059",
+            "20803319",
+            "20838306",
+            "20850050",
+            "20866456",
+            "20893792",
+            "20901870",
+            "20929282",
+            "20930189",
+            "20983398",
+            "21044756",
+            "21050612",
+            "25270196",
+            "20840015",
+            "20860794"
+          ]
+        },
+        {
+          "uid": "6F-111.00-開放式格局",
+          "layout": "開放式格局",
+          "floor_label": "6F/41F",
+          "area": 111.0,
+          "ask": 4860,
+          "cheap": 4440,
+          "fair": 4830,
+          "par": 5160,
+          "over_fair": 30,
+          "drop_note": "未見",
+          "house_ids": [
+            "21051851"
+          ]
+        },
+        {
+          "uid": "10F-103.79-開放式格局",
+          "layout": "開放式格局",
+          "floor_label": "10F/41F",
+          "area": 103.79,
+          "ask": 5088,
+          "cheap": 4740,
+          "fair": 5150,
+          "par": 5560,
+          "over_fair": -62,
+          "drop_note": "未見",
+          "house_ids": [
+            "20788297",
+            "20916626",
+            "21053506",
+            "21058132"
+          ]
+        },
+        {
+          "uid": "16F-121.65-3房",
+          "layout": "3房",
+          "floor_label": "16F/41F",
+          "area": 121.65,
+          "ask": 5999,
+          "cheap": 5800,
+          "fair": 6380,
+          "par": 6800,
+          "over_fair": -381,
+          "drop_note": "未見",
+          "house_ids": [
+            "20900869",
+            "21048540"
+          ]
+        },
+        {
+          "uid": "16F-99.96-開放式格局",
+          "layout": "開放式格局",
+          "floor_label": "16F/41F",
+          "area": 99.96,
+          "ask": 6380,
+          "cheap": 4598,
+          "fair": 4998,
+          "par": 5398,
+          "over_fair": 1382,
+          "drop_note": "未見",
+          "house_ids": [
+            "20877610"
+          ]
+        },
+        {
+          "uid": "17F-133.04-開放式格局",
+          "layout": "開放式格局",
+          "floor_label": "17F/41F",
+          "area": 133.04,
+          "ask": 6680,
+          "cheap": 6380,
+          "fair": 6780,
+          "par": 7180,
+          "over_fair": -100,
+          "drop_note": "未見",
+          "house_ids": [
+            "20823350"
+          ]
+        },
+        {
+          "uid": "22F-123.27-3房",
+          "layout": "3房",
+          "floor_label": "22F/41F",
+          "area": 123.27,
+          "ask": 8268,
+          "cheap": 5830,
+          "fair": 6600,
+          "par": 7550,
+          "over_fair": 1668,
+          "drop_note": "未見",
+          "house_ids": [
+            "20823745"
+          ]
+        }
+      ]
+    }
+  ]
+}
