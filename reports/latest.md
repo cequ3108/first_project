@@ -1,6 +1,6 @@
 # 遠雄北府苑、西門大院、遠雄新源邸、國泰文海硯、國泰磐耘、允將海安、國泰文林硯、藏美表參道、遠雄頂美、富立真邦、富立和築、國城定潮 每日盯盤
 
-- 產出時間（台灣）：**2026-10-22 17:03**
+- 產出時間（台灣）：**2026-10-23 17:00**
 - 社區數：**12**
 
 ## 一、有沒有掉入便宜價
@@ -9,7 +9,7 @@
 
 原本就在便宜價內：
 
-- **4F/41F／4房／117.40坪** 開價 **4580萬**，便宜價 4930萬，合理價 5500萬，平價 6010萬（實價底對3F無車3968／14F 4810；千萬精裝打2.5／4／5.5折）　[20530100](https://sale.591.com.tw/home/house/detail/2/20530100.html)、[20716059](https://sale.591.com.tw/home/house/detail/2/20716059.html)、[20803319](https://sale.591.com.tw/home/house/detail/2/20803319.html)、[20838306](https://sale.591.com.tw/home/house/detail/2/20838306.html)、[20850050](https://sale.591.com.tw/home/house/detail/2/20850050.html)、[20860794](https://sale.591.com.tw/home/house/detail/2/20860794.html)
+- **4F/41F／4房／117.40坪** 開價 **4580萬**，便宜價 4930萬，合理價 5500萬，平價 6010萬（實價底對3F無車3968／14F 4810；千萬精裝打2.5／4／5.5折）　[20530100](https://sale.591.com.tw/home/house/detail/2/20530100.html)、[20716059](https://sale.591.com.tw/home/house/detail/2/20716059.html)、[20748367](https://sale.591.com.tw/home/house/detail/2/20748367.html)、[20803319](https://sale.591.com.tw/home/house/detail/2/20803319.html)、[20838306](https://sale.591.com.tw/home/house/detail/2/20838306.html)、[20850050](https://sale.591.com.tw/home/house/detail/2/20850050.html)
 
 ## 二、有沒有掉入合理價
 
@@ -25,7 +25,7 @@
 原本就在合理價內：
 
 - **5F/15F／2+1房／55.63坪** 開價 **2198萬**，便宜價 2058萬，合理價 2214萬，平價 2364萬（帶狀估價（mid_3br））　[20807114](https://sale.591.com.tw/home/house/detail/2/20807114.html)、[20874700](https://sale.591.com.tw/home/house/detail/2/20874700.html)、[20939851](https://sale.591.com.tw/home/house/detail/2/20939851.html)、[21084114](https://sale.591.com.tw/home/house/detail/2/21084114.html)、[21085137](https://sale.591.com.tw/home/house/detail/2/21085137.html)、[21085557](https://sale.591.com.tw/home/house/detail/2/21085557.html)
-- **15F/15F／3房／56.53坪** 開價 **2498萬**，便宜價 2320萬，合理價 2520萬，平價 2650萬（頂樓朝南三房平車，對中樓實價往上加）　[20809270](https://sale.591.com.tw/home/house/detail/2/20809270.html)、[21004985](https://sale.591.com.tw/home/house/detail/2/21004985.html)、[21081934](https://sale.591.com.tw/home/house/detail/2/21081934.html)、[21105503](https://sale.591.com.tw/home/house/detail/2/21105503.html)、[21115498](https://sale.591.com.tw/home/house/detail/2/21115498.html)、[20722283](https://sale.591.com.tw/home/house/detail/2/20722283.html)
+- **15F/15F／3房／56.53坪** 開價 **2498萬**，便宜價 2320萬，合理價 2520萬，平價 2650萬（頂樓朝南三房平車，對中樓實價往上加）　[20809270](https://sale.591.com.tw/home/house/detail/2/20809270.html)、[21004985](https://sale.591.com.tw/home/house/detail/2/21004985.html)、[21081934](https://sale.591.com.tw/home/house/detail/2/21081934.html)、[21105503](https://sale.591.com.tw/home/house/detail/2/21105503.html)、[21115498](https://sale.591.com.tw/home/house/detail/2/21115498.html)、[25338939](https://sale.591.com.tw/home/house/detail/2/25338939.html)
 
 ### 國城定潮
 
@@ -57,7 +57,7 @@
 
 ### 國城定潮
 
-- **4F/41F／4房／117.40坪** 開價 **4580萬**　591已降400萬（4980→4580）　[20530100](https://sale.591.com.tw/home/house/detail/2/20530100.html)、[20716059](https://sale.591.com.tw/home/house/detail/2/20716059.html)、[20803319](https://sale.591.com.tw/home/house/detail/2/20803319.html)、[20838306](https://sale.591.com.tw/home/house/detail/2/20838306.html)、[20850050](https://sale.591.com.tw/home/house/detail/2/20850050.html)、[20860794](https://sale.591.com.tw/home/house/detail/2/20860794.html)
+- **4F/41F／4房／117.40坪** 開價 **4580萬**　591已降400萬（4980→4580）　[20530100](https://sale.591.com.tw/home/house/detail/2/20530100.html)、[20716059](https://sale.591.com.tw/home/house/detail/2/20716059.html)、[20748367](https://sale.591.com.tw/home/house/detail/2/20748367.html)、[20803319](https://sale.591.com.tw/home/house/detail/2/20803319.html)、[20838306](https://sale.591.com.tw/home/house/detail/2/20838306.html)、[20850050](https://sale.591.com.tw/home/house/detail/2/20850050.html)
 
 ## 四、遠雄北府苑｜開價／便宜價／合理價／平價
 
@@ -204,7 +204,7 @@
 
 ## 十五、國城定潮｜開價／便宜價／合理價／平價
 
-國城定潮：在售 34 則，去重後 **7** 戶。2 房與 3 房同一張表。
+國城定潮：在售 36 則，去重後 **7** 戶。2 房與 3 房同一張表。
 來源：[https://market.591.com.tw/101826/sale](https://market.591.com.tw/101826/sale)
 
 | 戶 | 格局 | 樓層 | 坪數 | 開價 | 便宜價 | 合理價 | 平價 | 超出合理 | 降價 |
