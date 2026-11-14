@@ -757,6 +757,140 @@
           "par_ping": 62.0
         }
       ]
+    },
+    {
+      "id": "shijie-juxing",
+      "name": "和宜世界巨星",
+      "market_id": 105149,
+      "sale_url": "https://market.591.com.tw/105149/sale",
+      "overrides": [
+        {
+          "match": {"floor": 2, "area": 47.62, "area_tol": 0.3},
+          "cheap": 2180,
+          "fair": 2320,
+          "par": 2460,
+          "note": "低樓三房露台平車，對115-05 6F 38.6坪含車2000往下修"
+        },
+        {
+          "match": {"floor": 2, "area": 59.5, "area_tol": 0.35},
+          "cheap": 2420,
+          "fair": 2620,
+          "par": 2780,
+          "note": "低樓4改2大露台平車，單價低但格局特殊"
+        },
+        {
+          "match": {"floor": 3, "area": 47.61, "area_tol": 0.3},
+          "cheap": 2200,
+          "fair": 2340,
+          "par": 2480,
+          "note": "低樓三房露台平車"
+        },
+        {
+          "match": {"floor": 5, "area": 65.41, "area_tol": 0.35},
+          "cheap": 2920,
+          "fair": 3160,
+          "par": 3360,
+          "note": "中低樓四房雙車，對115-03 6F 51.5坪含車2650加車"
+        },
+        {
+          "match": {"floor": 9, "area": 56.76, "area_tol": 0.3},
+          "cheap": 2680,
+          "fair": 2880,
+          "par": 3060,
+          "note": "中樓四房平車，對115-03 6F 51.5坪含車2650上修"
+        },
+        {
+          "match": {"floor": 10, "area": 56.76, "area_tol": 0.3},
+          "cheap": 2720,
+          "fair": 2920,
+          "par": 3100,
+          "note": "中高樓四房平車"
+        },
+        {
+          "match": {"floor": 11, "area": 44.98, "area_tol": 0.3},
+          "cheap": 2120,
+          "fair": 2280,
+          "par": 2380,
+          "note": "自售三房平車，對115-05 6F含車約52萬／坪"
+        },
+        {
+          "match": {"floor": 13, "area": 45.21, "area_tol": 0.3},
+          "cheap": 2180,
+          "fair": 2340,
+          "par": 2480,
+          "note": "高樓朝南三房平車，對114-11 15F 36.7坪含車2118"
+        }
+      ],
+      "bands": [
+        {
+          "id": "three_low",
+          "min_area": 34,
+          "max_area": 50,
+          "min_floor": 1,
+          "max_floor": 7,
+          "cheap_ping": 45.0,
+          "fair_ping": 48.5,
+          "par_ping": 51.5
+        },
+        {
+          "id": "three_mid",
+          "min_area": 34,
+          "max_area": 50,
+          "min_floor": 7,
+          "max_floor": 12,
+          "cheap_ping": 47.0,
+          "fair_ping": 50.8,
+          "par_ping": 53.5
+        },
+        {
+          "id": "three_high",
+          "min_area": 34,
+          "max_area": 50,
+          "min_floor": 12,
+          "max_floor": 20,
+          "cheap_ping": 48.0,
+          "fair_ping": 52.0,
+          "par_ping": 55.0
+        },
+        {
+          "id": "four_low",
+          "min_area": 50,
+          "max_area": 62,
+          "min_floor": 1,
+          "max_floor": 7,
+          "cheap_ping": 43.5,
+          "fair_ping": 47.5,
+          "par_ping": 51.0
+        },
+        {
+          "id": "four_mid",
+          "min_area": 50,
+          "max_area": 62,
+          "min_floor": 7,
+          "max_floor": 12,
+          "cheap_ping": 46.0,
+          "fair_ping": 50.0,
+          "par_ping": 53.5
+        },
+        {
+          "id": "four_high",
+          "min_area": 50,
+          "max_area": 62,
+          "min_floor": 12,
+          "max_floor": 20,
+          "cheap_ping": 47.5,
+          "fair_ping": 51.5,
+          "par_ping": 55.0
+        },
+        {
+          "id": "xl",
+          "min_area": 62,
+          "max_area": 85,
+          "cheap_ping": 43.0,
+          "fair_ping": 47.5,
+          "par_ping": 51.0
+        }
+      ]
     }
   ]
 }
