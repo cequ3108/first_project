@@ -1,6 +1,6 @@
 # 遠雄北府苑、西門大院、遠雄新源邸、國泰文海硯、國泰磐耘、允將海安、國泰文林硯、藏美表參道、遠雄頂美、富立真邦、富立和築、國城定潮 每日盯盤
 
-- 產出時間（台灣）：**2026-11-23 17:02**
+- 產出時間（台灣）：**2026-11-24 17:03**
 - 社區數：**12**
 
 ## 一、有沒有掉入便宜價
@@ -23,14 +23,14 @@
 
 原本就在合理價內：
 
-- **23F/24F／3房／52.62坪** 開價 **1988萬**，便宜價 1980萬，合理價 2100萬，平價 2220萬（次頂樓三房）　[21036851](https://sale.591.com.tw/home/house/detail/2/21036851.html)、[21069586](https://sale.591.com.tw/home/house/detail/2/21069586.html)、[21122907](https://sale.591.com.tw/home/house/detail/2/21122907.html)、[21129597](https://sale.591.com.tw/home/house/detail/2/21129597.html)、[21280473](https://sale.591.com.tw/home/house/detail/2/21280473.html)
+- **23F/24F／3房／52.62坪** 開價 **1988萬**，便宜價 1980萬，合理價 2100萬，平價 2220萬（次頂樓三房）　[21036851](https://sale.591.com.tw/home/house/detail/2/21036851.html)、[21069586](https://sale.591.com.tw/home/house/detail/2/21069586.html)、[21122907](https://sale.591.com.tw/home/house/detail/2/21122907.html)、[21129597](https://sale.591.com.tw/home/house/detail/2/21129597.html)、[21280473](https://sale.591.com.tw/home/house/detail/2/21280473.html)、[25579064](https://sale.591.com.tw/home/house/detail/2/25579064.html)
 
 ### 藏美表參道
 
 原本就在合理價內：
 
 - **9F/20F／2房／29.87坪** 開價 **1280萬**，便宜價 1220萬，合理價 1280萬，平價 1330萬（1+1／兩房含車）　[21287642](https://sale.591.com.tw/home/house/detail/2/21287642.html)
-- **9F/20F／2房／34.21坪** 開價 **1450萬**，便宜價 1368萬，合理價 1454萬，平價 1522萬（帶狀估價（mid_2br））　[21276665](https://sale.591.com.tw/home/house/detail/2/21276665.html)、[25545878](https://sale.591.com.tw/home/house/detail/2/25545878.html)
+- **9F/20F／2房／34.21坪** 開價 **1450萬**，便宜價 1368萬，合理價 1454萬，平價 1522萬（帶狀估價（mid_2br））　[21276665](https://sale.591.com.tw/home/house/detail/2/21276665.html)
 
 ### 富立和築
 
@@ -44,19 +44,23 @@
 原本就在合理價內：
 
 - **10F/41F／開放式格局／103.78坪** 開價 **5088萬**，便宜價 4740萬，合理價 5150萬，平價 5560萬（中低樓含平車，對115-07 18F 118坪5088（扣車約45萬／坪））　[21053506](https://sale.591.com.tw/home/house/detail/2/21053506.html)、[21085045](https://sale.591.com.tw/home/house/detail/2/21085045.html)、[21095194](https://sale.591.com.tw/home/house/detail/2/21095194.html)、[21099685](https://sale.591.com.tw/home/house/detail/2/21099685.html)、[21109437](https://sale.591.com.tw/home/house/detail/2/21109437.html)、[21131063](https://sale.591.com.tw/home/house/detail/2/21131063.html)
-- **14F/41F／開放式格局／114.42坪** 開價 **5588萬**，便宜價 5263萬，合理價 5721萬，平價 6179萬（帶狀估價（mid））　[21104098](https://sale.591.com.tw/home/house/detail/2/21104098.html)、[21106787](https://sale.591.com.tw/home/house/detail/2/21106787.html)、[21247270](https://sale.591.com.tw/home/house/detail/2/21247270.html)、[25549459](https://sale.591.com.tw/home/house/detail/2/25549459.html)
-- **16F/41F／3房／121.65坪** 開價 **5999萬**，便宜價 5800萬，合理價 6380萬，平價 6800萬（中樓三連號大平車，對115-06 27F 126坪6350）　[20900869](https://sale.591.com.tw/home/house/detail/2/20900869.html)、[21048540](https://sale.591.com.tw/home/house/detail/2/21048540.html)、[21091173](https://sale.591.com.tw/home/house/detail/2/21091173.html)、[21224946](https://sale.591.com.tw/home/house/detail/2/21224946.html)
+- **14F/41F／開放式格局／114.42坪** 開價 **5588萬**，便宜價 5263萬，合理價 5721萬，平價 6179萬（帶狀估價（mid））　[21104098](https://sale.591.com.tw/home/house/detail/2/21104098.html)、[21106787](https://sale.591.com.tw/home/house/detail/2/21106787.html)、[21247270](https://sale.591.com.tw/home/house/detail/2/21247270.html)
+- **16F/41F／3房／121.65坪** 開價 **5999萬**，便宜價 5800萬，合理價 6380萬，平價 6800萬（中樓三連號大平車，對115-06 27F 126坪6350）　[20900869](https://sale.591.com.tw/home/house/detail/2/20900869.html)、[21048540](https://sale.591.com.tw/home/house/detail/2/21048540.html)、[21091173](https://sale.591.com.tw/home/house/detail/2/21091173.html)、[21224946](https://sale.591.com.tw/home/house/detail/2/21224946.html)、[25549796](https://sale.591.com.tw/home/house/detail/2/25549796.html)
 - **17F/41F／開放式格局／133.03坪** 開價 **6680萬**，便宜價 6380萬，合理價 6780萬，平價 7180萬（中高樓雙連號平車毛胚，不加裝潢；對115-01 17F 112坪6138）　[21093065](https://sale.591.com.tw/home/house/detail/2/21093065.html)、[21109492](https://sale.591.com.tw/home/house/detail/2/21109492.html)
 
 ## 三、今日降價
 
 ### 遠雄北府苑
 
-- **10F/15F／2+1房／42.49坪** 開價 **1993萬**　591已降5萬（1998→1993）　[20987775](https://sale.591.com.tw/home/house/detail/2/20987775.html)、[20996391](https://sale.591.com.tw/home/house/detail/2/20996391.html)、[21062655](https://sale.591.com.tw/home/house/detail/2/21062655.html)、[21063032](https://sale.591.com.tw/home/house/detail/2/21063032.html)、[21091207](https://sale.591.com.tw/home/house/detail/2/21091207.html)、[21147084](https://sale.591.com.tw/home/house/detail/2/21147084.html)
+- **10F/15F／2+1房／42.49坪** 開價 **1993萬**　591已降5萬（1998→1993）　[20987775](https://sale.591.com.tw/home/house/detail/2/20987775.html)、[20992629](https://sale.591.com.tw/home/house/detail/2/20992629.html)、[20996391](https://sale.591.com.tw/home/house/detail/2/20996391.html)、[21062655](https://sale.591.com.tw/home/house/detail/2/21062655.html)、[21063032](https://sale.591.com.tw/home/house/detail/2/21063032.html)、[21091207](https://sale.591.com.tw/home/house/detail/2/21091207.html)
+
+### 遠雄新源邸
+
+- **3F/24F／2房／28.93坪** 開價 **1188萬**　591已降50萬（1238→1188）；較昨日降50萬（1238→1188）　[21003792](https://sale.591.com.tw/home/house/detail/2/21003792.html)、[21193645](https://sale.591.com.tw/home/house/detail/2/21193645.html)、[25525450](https://sale.591.com.tw/home/house/detail/2/25525450.html)
 
 ### 允將海安
 
-- **23F/24F／3房／52.62坪** 開價 **1988萬**　591已降150萬（2138→1988）　[21036851](https://sale.591.com.tw/home/house/detail/2/21036851.html)、[21069586](https://sale.591.com.tw/home/house/detail/2/21069586.html)、[21122907](https://sale.591.com.tw/home/house/detail/2/21122907.html)、[21129597](https://sale.591.com.tw/home/house/detail/2/21129597.html)、[21280473](https://sale.591.com.tw/home/house/detail/2/21280473.html)
+- **23F/24F／3房／52.62坪** 開價 **1988萬**　591已降150萬（2138→1988）　[21036851](https://sale.591.com.tw/home/house/detail/2/21036851.html)、[21069586](https://sale.591.com.tw/home/house/detail/2/21069586.html)、[21122907](https://sale.591.com.tw/home/house/detail/2/21122907.html)、[21129597](https://sale.591.com.tw/home/house/detail/2/21129597.html)、[21280473](https://sale.591.com.tw/home/house/detail/2/21280473.html)、[25579064](https://sale.591.com.tw/home/house/detail/2/25579064.html)
 
 ### 藏美表參道
 
@@ -64,7 +68,7 @@
 
 ### 遠雄頂美
 
-- **6F/22F／2+1房／46.08坪** 開價 **1717萬**　591已降483萬（2200→1717）　[21215734](https://sale.591.com.tw/home/house/detail/2/21215734.html)、[21222708](https://sale.591.com.tw/home/house/detail/2/21222708.html)、[21273925](https://sale.591.com.tw/home/house/detail/2/21273925.html)、[21278199](https://sale.591.com.tw/home/house/detail/2/21278199.html)、[21305247](https://sale.591.com.tw/home/house/detail/2/21305247.html)
+- **6F/22F／2+1房／46.08坪** 開價 **1717萬**　591已降483萬（2200→1717）　[21215734](https://sale.591.com.tw/home/house/detail/2/21215734.html)、[21222708](https://sale.591.com.tw/home/house/detail/2/21222708.html)、[21273925](https://sale.591.com.tw/home/house/detail/2/21273925.html)、[21278199](https://sale.591.com.tw/home/house/detail/2/21278199.html)、[21305247](https://sale.591.com.tw/home/house/detail/2/21305247.html)、[21309255](https://sale.591.com.tw/home/house/detail/2/21309255.html)
 
 ### 國城定潮
 
@@ -106,8 +110,8 @@
 
 | 戶 | 格局 | 樓層 | 坪數 | 開價 | 便宜價 | 合理價 | 平價 | 超出合理 | 降價 |
 |---|---|---|---:|---:|---:|---:|---:|---:|---|
+| 3F-28.93-2房 | 2房 | 3F/24F | 28.93 | 1188 | 1079 | 1157 | 1201 | +31 | 591已降50萬（1238→1188）；較昨日降50萬（1238→1188） |
 | 6F-28.96-2房 | 2房 | 6F/24F | 28.96 | 1198 | 1080 | 1160 | 1200 | +38 | 未見 |
-| 3F-28.93-2房 | 2房 | 3F/24F | 28.93 | 1238 | 1079 | 1157 | 1201 | +81 | 未見 |
 | 18F-39.05-2房 | 2房 | 18F/24F | 39.05 | 1650 | 1425 | 1503 | 1562 | +147 | 未見 |
 | 17F-49.77-2房 | 2房 | 17F/24F | 49.77 | 1988 | 1820 | 1920 | 1990 | +68 | 未見 |
 | 4F-49.72-3房 | 3房 | 4F/24F | 49.72 | 2188 | 1780 | 1880 | 1980 | +308 | 未見 |
@@ -117,7 +121,7 @@
 
 ## 七、國泰文海硯｜開價／便宜價／合理價／平價
 
-國泰文海硯：在售 4 則，去重後 **1** 戶。2 房與 3 房同一張表。
+國泰文海硯：在售 3 則，去重後 **1** 戶。2 房與 3 房同一張表。
 來源：[https://market.591.com.tw/39711/sale](https://market.591.com.tw/39711/sale)
 
 | 戶 | 格局 | 樓層 | 坪數 | 開價 | 便宜價 | 合理價 | 平價 | 超出合理 | 降價 |
@@ -135,11 +139,12 @@
 
 ## 九、允將海安｜開價／便宜價／合理價／平價
 
-允將海安：在售 15 則，去重後 **6** 戶。2 房與 3 房同一張表。
+允將海安：在售 16 則，去重後 **7** 戶。2 房與 3 房同一張表。
 來源：[https://market.591.com.tw/3694974/sale](https://market.591.com.tw/3694974/sale)
 
 | 戶 | 格局 | 樓層 | 坪數 | 開價 | 便宜價 | 合理價 | 平價 | 超出合理 | 降價 |
 |---|---|---|---:|---:|---:|---:|---:|---:|---|
+| 14F-31.48-2房 | 2房 | 14F/24F | 31.48 | 1268 | — | — | — | — | 未見 |
 | 4F-48.85-2+1房 | 2+1房 | 4F/24F | 48.85 | 1698 | 1580 | 1660 | 1720 | +38 | 未見 |
 | 23F-52.62-3房 | 3房 | 23F/24F | 52.62 | 1988 | 1980 | 2100 | 2220 | -112 | 591已降150萬（2138→1988） |
 | 17F-52.61-3房 | 3房 | 17F/24F | 52.61 | 2158 | 1762 | 1894 | 1999 | +264 | 未見 |
@@ -151,7 +156,7 @@
 
 ## 十、國泰文林硯｜開價／便宜價／合理價／平價
 
-國泰文林硯：在售 2 則，去重後 **1** 戶。2 房與 3 房同一張表。
+國泰文林硯：在售 1 則，去重後 **1** 戶。2 房與 3 房同一張表。
 來源：[https://market.591.com.tw/39784/sale](https://market.591.com.tw/39784/sale)
 
 | 戶 | 格局 | 樓層 | 坪數 | 開價 | 便宜價 | 合理價 | 平價 | 超出合理 | 降價 |
@@ -162,7 +167,7 @@
 
 ## 十一、藏美表參道｜開價／便宜價／合理價／平價
 
-藏美表參道：在售 9 則，去重後 **6** 戶。2 房與 3 房同一張表。
+藏美表參道：在售 8 則，去重後 **5** 戶。2 房與 3 房同一張表。
 來源：[https://market.591.com.tw/5885447/sale](https://market.591.com.tw/5885447/sale)
 
 | 戶 | 格局 | 樓層 | 坪數 | 開價 | 便宜價 | 合理價 | 平價 | 超出合理 | 降價 |
@@ -170,7 +175,6 @@
 | 9F-29.87-2房 | 2房 | 9F/20F | 29.87 | 1280 | 1220 | 1280 | 1330 | 0 | 未見 |
 | 16F-28.22-2房 | 2房 | 16F/20F | 28.22 | 1288 | 1210 | 1280 | 1320 | +8 | 未見 |
 | 9F-34.21-2房 | 2房 | 9F/20F | 34.21 | 1450 | 1368 | 1454 | 1522 | -4 | 未見 |
-| 6F-39.00-2房 | 2房 | 6F/20F | 39.00 | 1580 | 1480 | 1560 | 1640 | +20 | 未見 |
 | 16F-36.29-3房 | 3房 | 16F/20F | 36.29 | 1650 | 1452 | 1542 | 1615 | +108 | 591已降138萬（1788→1650） |
 | 2F-36.30-2+1房 | 2+1房 | 2F/20F | 36.30 | 2098 | 1452 | 1543 | 1615 | +555 | 未見 |
 
@@ -178,7 +182,7 @@
 
 ## 十二、遠雄頂美｜開價／便宜價／合理價／平價
 
-遠雄頂美：在售 20 則，去重後 **5** 戶。2 房與 3 房同一張表。
+遠雄頂美：在售 21 則，去重後 **5** 戶。2 房與 3 房同一張表。
 來源：[https://market.591.com.tw/101914/sale](https://market.591.com.tw/101914/sale)
 
 | 戶 | 格局 | 樓層 | 坪數 | 開價 | 便宜價 | 合理價 | 平價 | 超出合理 | 降價 |
